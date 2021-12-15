@@ -121,7 +121,8 @@ DEPENDENCIES:
   - RxCocoa (~> 6.0)
   - RxDataSources (~> 5.0)
   - RxKeyboard (~> 2.0)
-  - RxOptional
+  - RxOptional (~> 5.0)
+  - RxSwift (~> 6.0)
   - RxSwiftExt (~> 6.0)
   - SnapKit
   - SSZipArchive
@@ -129,7 +130,7 @@ DEPENDENCIES:
   - SwiftLint
   - SwiftyUserDefaults
   - SwipeCellKit
-  - Texture
+  - Texture (~> 3.0)
   - WCDB.swift
   - Wormholy
   - YPImagePicker
@@ -217,6 +218,6 @@ SPEC CHECKSUMS:
   Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
   YPImagePicker: 1463a19a36244e209dcb03c30e63559c5afa9602
 
-PODFILE CHECKSUM: 3108561db78fb1851e404255b3daba4a10f8e681
+PODFILE CHECKSUM: adfc15cc7b3544b4d06b2fe251efa4e9f8b603a7
 
 COCOAPODS: 1.11.2
