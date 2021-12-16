@@ -34,7 +34,7 @@ public struct URLPattern {
             switch self {
             case .string(let value):
                 return value
-            case .wild(_):
+            case .wild:
                 return "([^/]+?)"
             }
         }
@@ -44,7 +44,7 @@ public struct URLPattern {
             switch self {
             case .string(let value):
                 return value
-            case .wild(_):
+            case .wild:
                 return "%@"
             }
         }
@@ -65,7 +65,7 @@ public struct URLPattern {
         guard let url = URL(string: urlString),
             let scheme = url.scheme,
             let host = url.host,
-            url.pathComponents.count > 0 else {
+              !url.pathComponents.isEmpty else {
                 return nil
         }
 
@@ -75,7 +75,7 @@ public struct URLPattern {
 
         components[0] = host
 
-        self.components = components.compactMap({ (comp) -> Section? in
+        self.components = components.compactMap({ comp -> Section? in
             if let char = comp.first {
                 switch char {
                 case ":":
@@ -91,16 +91,12 @@ public struct URLPattern {
         })
 
         if let query = url.query {
-            self.parameters = query.components(separatedBy: "&").reduce([:], { (params, pair) -> [String: Any] in
-                let kv = pair.components(separatedBy: "=")
-                var params = params
-                if kv.count == 2 {
-                    params[kv[0]] = kv[1] as AnyObject
+            self.parameters = query.components(separatedBy: "&").reduce(into: [:], { partialResult, pair in
+                let key = pair.components(separatedBy: "=")
+                if key.count == 2 {
+                    partialResult[key[0]] = key[1] as AnyObject
                 }
-
-                return params
             })
-
         } else {
             self.parameters = [:]
         }
@@ -114,11 +110,11 @@ public struct URLPattern {
     private var regexPattern: NSRegularExpression?
 
     public var regex: String {
-        return "\(self.scheme)://\(self.components.map {$0.regex}.joined(separator: "/"))"
+        return "\(self.scheme)://\(self.components.map { $0.regex }.joined(separator: "/"))"
     }
 
     public var format: String {
-        return "\(self.scheme)://\(self.components.map {$0.format}.joined(separator: "/"))"
+        return "\(self.scheme)://\(self.components.map { $0.format }.joined(separator: "/"))"
     }
 
     public mutating func compile() {
@@ -138,9 +134,9 @@ public struct URLPattern {
         if let results = self.regexPattern?.matches(in: pattern.url, options: [], range: NSRange(location: 0, length: pattern.url.count)),
             let result = results.first {
 
-            let wildSections = self.components.filter({ (section) -> Bool in
+            let wildSections = self.components.filter({ section -> Bool in
                 switch section {
-                case .wild(_):
+                case .wild:
                     return true
                 default:
                     return false

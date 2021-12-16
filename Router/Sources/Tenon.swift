@@ -40,7 +40,7 @@ public struct Tenon {
 
         self.pieces[pieceName] = piece
     }
-    
+
     /// 通过名字获取组件
     ///
     /// - Parameter pieceName: 组件名称

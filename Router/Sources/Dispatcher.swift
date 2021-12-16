@@ -13,7 +13,7 @@ import Common
 public enum RouterDispatchSource: String {
     /// 来自APP内部的跳转
     case inside
-    
+
     /// 来自外部的跳转
     case outside
 }
@@ -25,7 +25,7 @@ public protocol RouterDispatcherProtocol {
         params: [String: Any]?,
         jsCallback: ((String) -> Void)?
     ) -> DispatchResult
-    
+
     func canDispatchAndNotSystemDetail(_ url: String) -> Bool
 }
 
@@ -43,7 +43,7 @@ extension Router {
             jsCallback: jsCallback
         ) ?? .unrecognize
     }
-    
+
     public static func canDispatchAndNotSystemDetail(_ url: String) -> Bool {
         self.routerDispatcher?.canDispatchAndNotSystemDetail(url) == true
     }

@@ -9,33 +9,33 @@
 import Foundation
 
 public struct ChatSession {
-    
+
     var sessionID: String
-    
+
     var name: String
-    
+
     var avatar: URL?
-    
-    var content: String? = nil
-    
+
+    var content: String?
+
     var unreadCount: Int = 0
-    
+
     var showUnreadDot = false
-    
+
     var stickTop: Bool = false
-    
+
     var muted: Bool = false
-    
+
     var showDrafts: Bool {
         return draft != nil
     }
-    
-    var draft: String? = nil
+
+    var draft: String?
 
     var forceNotify: Bool = false
-    
-    var chatBackground: String? = nil
-    
+
+    var chatBackground: String?
+
     public init(sessionID: String, name: String) {
         self.sessionID = sessionID
         self.name = name

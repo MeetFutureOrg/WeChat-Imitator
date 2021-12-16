@@ -22,8 +22,8 @@ public struct Router {
         print("router test")
         return nil
     }
-    
-    static private(set) var routerDispatcher: RouterDispatcherProtocol?
+
+    private(set) static var routerDispatcher: RouterDispatcherProtocol?
 
     public static func resolve<T>(_ pieceType: T.Type) -> T? {
 
@@ -59,7 +59,7 @@ public struct Router {
             }
         }
     }
-    
+
     public static func registerDispatcher(_ routerDispatcher: RouterDispatcherProtocol?) {
         self.routerDispatcher = routerDispatcher
     }

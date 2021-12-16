@@ -9,65 +9,59 @@ use_frameworks!
 # ignore spec repo warning
 install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 
-def rx_components()
-  rx_swift()
-  rx_swift_ext()
-  rx_optional()
-end
-
-def rx_swift()
+def rx_swift
   pod 'RxSwift', '~> 6.0'
 end
 
-def rx_cocoa()
+def rx_cocoa
   pod 'RxCocoa', '~> 6.0'
 end
 
-def rx_data_sources()
+def rx_data_sources
   pod 'RxDataSources', '~> 5.0'
 end
 
-def rx_keyboard()
+def rx_keyboard
   pod 'RxKeyboard', '~> 2.0'
 end
 
-def rx_swift_ext()
+def rx_swift_ext
   pod 'RxSwiftExt', '~> 6.0'
 end
 
-def rx_optional()
+def rx_optional
   pod 'RxOptional', '~> 5.0'
 end
 
-def moya()
+def moya
   pod 'Moya/RxSwift', '~> 15.0'
 end
 
-def texture()
+def texture
   pod 'Texture', '~> 3.0'
 end
 
-def snap_kit()
+def snap_kit
   pod 'SnapKit'
 end
 
-def navigation_bar()
+def navigation_bar
   pod 'HBDNavigationBar'
 end
 
-def text_view()
+def text_view
   pod 'NextGrowingTextView'
 end
 
-def image_viewer()
+def image_viewer
   pod 'ImageViewer'
 end
 
-def image_picker()
+def image_picker
   pod 'YPImagePicker'
 end
 
-def swipe_cell()
+def swipe_cell
   pod 'SwipeCellKit'
 end
 
@@ -75,43 +69,48 @@ def eureka()
   pod 'Eureka'
 end
 
-def mmkv()
+def mmkv
   pod 'MMKV'
 end
 
-def wcdb()
+def wcdb
   pod 'WCDB.swift'
 end
 
-def zip()
+def zip
   pod 'SSZipArchive'
 end
 
-def diff()
+def diff
   pod 'DeepDiff'
 end
 
-def date()
+def date
   pod 'SwiftDate'
 end
 
-def device()
+def device
   pod 'DeviceKit'
 end
 
-def object_mapper()
+def object_mapper
   pod 'ObjectMapper'
 end
 
-def user_defaults()
+def user_defaults
   pod 'SwiftyUserDefaults'
 end
 
-def reachability()
+def reachability
   pod 'ReachabilitySwift'
 end
 
-def lint()
+def swifter
+  pod 'SwifterSwift'
+end
+
+
+def lint
   pod 'SwiftLint'
 end
 
@@ -121,183 +120,188 @@ def debugging_tools()
   pod 'Wormholy', :configurations => ['Debug']
 end
 
+def rx_components()
+  rx_swift
+  rx_swift_ext
+  rx_optional
+end
+
 target 'WeChat' do
   # Pods for WeChatmo
   rx_components()
   debugging_tools()
   
-  lint()
+  lint
 end
 
 target 'ChatSession' do
   # Pods for ChatSession
   rx_components()
-  rx_cocoa()
-  rx_data_sources()
-  texture()
-  diff()
-  snap_kit()
-  navigation_bar()
-  swipe_cell()
+  rx_cocoa
+  rx_data_sources
+  texture
+  diff
+  snap_kit
+  swipe_cell
+  swifter
 
-  lint()
+  lint
 end
 
 target 'ChatRoom' do
   # Pods for ChatRoom
   rx_components()
-  rx_cocoa()
-  rx_data_sources()
-  texture()
-  diff()
-  snap_kit()
-  navigation_bar()
-  rx_keyboard()
-  text_view()
-  image_viewer()
-  image_picker()
+  rx_cocoa
+  rx_data_sources
+  texture
+  diff
+  snap_kit
+  rx_keyboard
+  text_view
+  image_viewer
+  image_picker
+  swifter
 
-  lint()
+  lint
 end
 
 target 'Contact' do
   # Pods for Contact
   rx_components()
-  rx_cocoa()
-  rx_data_sources()
-  texture()
-  diff()
-  snap_kit()
-  navigation_bar()
+  rx_cocoa
+  rx_data_sources
+  texture
+  diff
+  snap_kit
   
-  lint()
+  lint
 end
 
 target 'Discovery' do
   # Pods for Discovery
   rx_components()
-  rx_cocoa()
-  rx_data_sources()
-  texture()
-  diff()
-  snap_kit()
-  navigation_bar()
+  rx_cocoa
+  rx_data_sources
+  texture
+  diff
+  snap_kit
   
-  lint()
+  lint
 end
 
 target 'Profile' do
   # Pods for Profile
   rx_components()
-  rx_cocoa()
-  rx_data_sources()
-  texture()
-  diff()
-  snap_kit()
-  navigation_bar()
+  rx_cocoa
+  rx_data_sources
+  texture
+  diff
+  snap_kit
   eureka()
   
-  lint()
+  lint
 end
 
 target 'Account' do
   # Pods for Account
   rx_components()
   
-  lint()
+  lint
 end
 
 target 'Context' do
   # Pods for Context
   rx_components()
   
-  lint()
+  lint
 end
 
-target 'Components' do
-  # Pods for Components
+target 'Component' do
+  # Pods for Component
   rx_components()
-  rx_cocoa()
-  rx_data_sources()
-  texture()
-  diff()
-  snap_kit()
-  navigation_bar()
+  rx_cocoa
+  rx_data_sources
+  texture
+  diff
+  snap_kit
   
-  lint()
+  lint
 end
 
 target 'Search' do
   # Pods for Search
   rx_components()
-  navigation_bar()
-  rx_cocoa()
-  rx_data_sources()
-  texture()
-  diff()
-  snap_kit()
+  rx_cocoa
+  rx_data_sources
+  texture
+  diff
+  snap_kit
   
-  lint()
+  lint
 end
 
 target 'Model' do
   # Pods for Model
   rx_components()
-  object_mapper()
+  moya
+  object_mapper
   
-  lint()
+  lint
 end
 
 target 'Common' do
   # Pods for Common
   rx_components()
-  rx_cocoa()
+  rx_cocoa
+  texture()
+  navigation_bar
   
-  lint()
+  lint
 end
 
 target 'Utilities' do
   # Pods for Utilities
   rx_components()
-  user_defaults()
-  zip()
-  date()
-  device()
+  user_defaults
+  zip
+  date
+  device
   
-  lint()
+  lint
 end
 
-target 'Network' do
-  # Pods for Network
+target 'Networking' do
+  # Pods for Networking
   rx_components()
-  reachability()
-  moya()
+  rx_cocoa
+  reachability
+  moya
   
-  lint()
+  lint
 end
 
 target 'Database' do
   # Pods for Database
   rx_components()
-  mmkv()
-  wcdb()
+  mmkv
+  wcdb
   
-  lint()
+  lint
 end
 
 target 'Emoticon' do
   # Pods for Emoticon
   rx_components()
-  rx_cocoa()
+  rx_cocoa
   
-  lint()
+  lint
 end
 
 target 'Logger' do
   # Pods for Logger
   rx_components()
   
-  lint()
+  lint
 end
 
 # Deployment Target Version

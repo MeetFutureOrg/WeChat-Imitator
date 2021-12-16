@@ -17,9 +17,9 @@ public enum Module: String, CaseIterable {
     case Account
     case Model
     case Context
-    case Components
+    case Component
     case Utilities
-    case Network
+    case Networking
     case Common
     case Database
     case Emoticon
@@ -42,9 +42,9 @@ extension Module {
 
         case  .Model: return false
         case  .Context: return false
-        case  .Components: return false
+        case  .Component: return false
         case  .Utilities: return false
-        case  .Network: return false
+        case  .Networking: return false
         case  .Common: return false
         case  .Database: return false
         case  .Emoticon: return false
@@ -55,7 +55,7 @@ extension Module {
 }
 
 extension Router {
-    
+
     public static var ChatSession: ChatSessionPiece? {
         return Router.resolve(ChatSessionPiece.self)
     }

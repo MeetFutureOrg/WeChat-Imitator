@@ -73,6 +73,31 @@ PODS:
   - SSZipArchive (2.4.2)
   - SteviaLayout (4.7.3)
   - SwiftDate (6.3.1)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
   - SwiftLint (0.45.1)
   - SwiftyUserDefaults (5.3.0)
   - SwipeCellKit (2.7.1)
@@ -127,6 +152,7 @@ DEPENDENCIES:
   - SnapKit
   - SSZipArchive
   - SwiftDate
+  - SwifterSwift
   - SwiftLint
   - SwiftyUserDefaults
   - SwipeCellKit
@@ -168,6 +194,7 @@ SPEC REPOS:
     - SSZipArchive
     - SteviaLayout
     - SwiftDate
+    - SwifterSwift
     - SwiftLint
     - SwiftyUserDefaults
     - SwipeCellKit
@@ -209,6 +236,7 @@ SPEC CHECKSUMS:
   SSZipArchive: e7b4f3d9e780c2acc1764cd88fbf2de28f26e5b2
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftLint: 06ac37e4d38c7068e0935bb30cda95f093bec761
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
@@ -218,6 +246,6 @@ SPEC CHECKSUMS:
   Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
   YPImagePicker: 1463a19a36244e209dcb03c30e63559c5afa9602
 
-PODFILE CHECKSUM: adfc15cc7b3544b4d06b2fe251efa4e9f8b603a7
+PODFILE CHECKSUM: 42a811ac3db0c41c960f19b9f65364fea353f849
 
 COCOAPODS: 1.11.2
