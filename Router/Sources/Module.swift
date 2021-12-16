@@ -26,6 +26,7 @@ public enum Module: String, CaseIterable {
     case Router
     case Logger
     case Search
+    case Resource
 }
 
 extension Module {
@@ -50,6 +51,7 @@ extension Module {
         case  .Emoticon: return false
         case  .Router: return false
         case  .Logger: return false
+        case  .Resource: return false
         }
     }
 }

@@ -304,6 +304,13 @@ target 'Logger' do
   lint
 end
 
+target 'Resource' do
+  # Pods for Resource
+  rx_components()
+  
+  lint
+end
+
 # Deployment Target Version
 post_install do |installer|
   # rmeove AssetsLibrary framework

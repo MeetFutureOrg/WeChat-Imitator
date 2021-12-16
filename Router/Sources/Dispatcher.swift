@@ -10,8 +10,8 @@ import Foundation
 import Common
 
 /// 跳转的来源，会区分来自内部调用和外部调通，一些敏感的跳转不支持从外部调用
-public enum RouterDispatchSource: String {
-    /// 来自APP内部的跳转
+public enum RouterDispatchSourceType: String {
+    /// 来自 App 内部的跳转
     case inside
 
     /// 来自外部的跳转
@@ -20,31 +20,31 @@ public enum RouterDispatchSource: String {
 
 public protocol RouterDispatcherProtocol {
     func dispatch(
-        _ url: String,
-        source: RouterDispatchSource,
-        params: [String: Any]?,
-        jsCallback: ((String) -> Void)?
+        _ URLString: String,
+        sourceType: RouterDispatchSourceType,
+        parameters: [String: Any]?,
+        javaScriptCallback: ((String) -> Void)?
     ) -> DispatchResult
 
-    func canDispatchAndNotSystemDetail(_ url: String) -> Bool
+    func dispatchable(_ URLString: String) -> Bool
 }
 
 extension Router {
     public static func dispatch(
-        _ url: String,
-        source: RouterDispatchSource = .inside,
-        params: [String: Any]? = nil,
-        jsCallback: ((String) -> Void)? = nil
+        _ URLString: String,
+        sourceType: RouterDispatchSourceType = .inside,
+        parameters: [String: Any]? = nil,
+        javaScriptCallback: ((String) -> Void)? = nil
     ) -> DispatchResult {
-        self.routerDispatcher?.dispatch(
-            url,
-            source: source,
-            params: params,
-            jsCallback: jsCallback
+        routerDispatcher?.dispatch(
+            URLString,
+            sourceType: sourceType,
+            parameters: parameters,
+            javaScriptCallback: javaScriptCallback
         ) ?? .unrecognize
     }
 
-    public static func canDispatchAndNotSystemDetail(_ url: String) -> Bool {
-        self.routerDispatcher?.canDispatchAndNotSystemDetail(url) == true
+    public static func dispatchable(_ URLString: String) -> Bool {
+        routerDispatcher?.dispatchable(URLString) == true
     }
 }

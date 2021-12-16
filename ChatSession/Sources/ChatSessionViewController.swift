@@ -21,7 +21,7 @@ public class ChatSessionViewController: ViewController {
         tableNode.delegate = self
         tableNode.dataSource = self
         node.addSubnode(tableNode)
-        tableNode.backgroundColor = .random
+        tableNode.backgroundColor = Color(hex: 0xFAFAFA)
     }
     
     override public func viewDidLayoutSubviews() {
