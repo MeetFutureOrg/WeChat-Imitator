@@ -6,12 +6,12 @@
 //  Copyright © 2021 TheBoring. All rights reserved.
 //
 
-import Router
+import Foundation
 
 /// 枚举的 rawValue 为 url 的 Path, 例如 wechat://wechat/session 的 rawValue 为 "/session"
 enum RouterDispatcherType: String, CaseIterable {
     /// 聊天列表, url 参数
-    case session             = "/session"
+    case session = "/session"
 }
 
 extension RouterDispatcherType {

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Component
 
 let SharedApplication = Application.shared
 
@@ -19,7 +18,7 @@ final class Application {
     private var launchOptions: [UIApplication.LaunchOptionsKey: Any]?
 
     private(set)
-    var window: Window = Window(frame: UIScreen.main.bounds)
+    var window: WeChatWindow = WeChatWindow(frame: UIScreen.main.bounds)
 
     func initialize(delegate: AppDelegate, launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         self.delegate = delegate
@@ -51,7 +50,7 @@ final class Application {
     }
 
     private func configMainInterface() {
-        let tabBarController = RootTabBarController()
+        let tabBarController = MainTabBarController()
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
     }

@@ -6,16 +6,6 @@
 //  Copyright © 2021 TheBoring. All rights reserved.
 //
 
-import Model
-import Router
-import Component
-import Logger
-import Common
-import Utilities
-import Resource
-import Networking
-
-import SafariServices
 import RxSwift
 
 class RouterDispatcher: RouterDispatcherProtocol {
@@ -34,7 +24,7 @@ class RouterDispatcher: RouterDispatcherProtocol {
     func dispatch(
         _ URLString: String,
         sourceType: RouterDispatchSourceType,
-        parameters: [String : Any]?,
+        parameters: [String: Any]?,
         javaScriptCallback: ((String) -> Void)?
     ) -> DispatchResult {
         
@@ -91,7 +81,7 @@ extension RouterDispatcher {
     }
     
     private func dispatchHTTP(_ URLString: String) -> DispatchResult {
-        guard let host = URL(string: URLString)?.host else {
+        guard URL(string: URLString)?.host != nil else {
             return .unrecognized
         }
         

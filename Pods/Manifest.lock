@@ -7,6 +7,7 @@ PODS:
   - FLEX (4.6.1)
   - HBDNavigationBar (1.9.3)
   - ImageViewer (6.0.0)
+  - Kingfisher (7.1.2)
   - matrix-wechat (1.0.1):
     - matrix-wechat/matrixARC (= 1.0.1)
     - matrix-wechat/matrixNonARC1 (= 1.0.1)
@@ -48,6 +49,9 @@ PODS:
     - RxSwift (= 6.2.0)
   - RxDataSources (5.0.0):
     - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxGesture (4.0.3):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
   - RxKeyboard (2.0.0):
@@ -131,24 +135,27 @@ PODS:
     - SteviaLayout (= 4.7.3)
 
 DEPENDENCIES:
+  - Alamofire
   - DeepDiff
   - DeviceKit
   - Eureka
   - FLEX
   - HBDNavigationBar
   - ImageViewer
+  - Kingfisher
   - matrix-wechat
   - MMKV
-  - Moya/RxSwift (~> 15.0)
+  - Moya/RxSwift
   - NextGrowingTextView
   - ObjectMapper
   - ReachabilitySwift
-  - RxCocoa (~> 6.0)
-  - RxDataSources (~> 5.0)
-  - RxKeyboard (~> 2.0)
-  - RxOptional (~> 5.0)
-  - RxSwift (~> 6.0)
-  - RxSwiftExt (~> 6.0)
+  - RxCocoa
+  - RxDataSources
+  - RxGesture
+  - RxKeyboard
+  - RxOptional
+  - RxSwift (~> 6.2)
+  - RxSwiftExt
   - SnapKit
   - SSZipArchive
   - SwiftDate
@@ -156,7 +163,7 @@ DEPENDENCIES:
   - SwiftLint
   - SwiftyUserDefaults
   - SwipeCellKit
-  - Texture (~> 3.0)
+  - Texture
   - WCDB.swift
   - Wormholy
   - YPImagePicker
@@ -171,6 +178,7 @@ SPEC REPOS:
     - FLEX
     - HBDNavigationBar
     - ImageViewer
+    - Kingfisher
     - matrix-wechat
     - MMKV
     - MMKVCore
@@ -184,6 +192,7 @@ SPEC REPOS:
     - ReachabilitySwift
     - RxCocoa
     - RxDataSources
+    - RxGesture
     - RxKeyboard
     - RxOptional
     - RxRelay
@@ -213,6 +222,7 @@ SPEC CHECKSUMS:
   FLEX: bbc55d197f87d7cde2454c3981aa47069b694144
   HBDNavigationBar: a96fb380ca52622caa6272665460e0f2ea6a8bfe
   ImageViewer: cb88ef1c0ba19161bc10702adfdcebc116a7a59d
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
   matrix-wechat: db0ef2c0bfe982aa9c2c42aa409c48724bedc507
   MMKV: 217b643c181c3d2f71983206ca1972d0a6e99881
   MMKVCore: f9e4f56742fdebbd042f7a273e278927f182cee7
@@ -226,6 +236,7 @@ SPEC CHECKSUMS:
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxGesture: abadd243fc36db74df43dfc893829ddde94f1a3d
   RxKeyboard: 4f5863f43b4ff0cbb2a20b94688d6b80c8a43c14
   RxOptional: 3664964c96b69dd20c9cf78bdfe546615e26eca8
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
@@ -246,6 +257,6 @@ SPEC CHECKSUMS:
   Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
   YPImagePicker: 1463a19a36244e209dcb03c30e63559c5afa9602
 
-PODFILE CHECKSUM: dff82836dfa0c9976466b03fd9cfe3f0812f0ee0
+PODFILE CHECKSUM: de041623a536f647dac5f4972f12b1c42b4033be
 
 COCOAPODS: 1.11.2
