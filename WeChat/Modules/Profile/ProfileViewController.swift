@@ -8,9 +8,9 @@
 
 import AsyncDisplayKit
 
-public class ProfileViewController: ViewController {
+class ProfileViewController: ViewController {
 
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         node.backgroundColor = .purple
     }

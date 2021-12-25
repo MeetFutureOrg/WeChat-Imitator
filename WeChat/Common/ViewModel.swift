@@ -24,7 +24,7 @@ class ViewModel: NSObject {
     let serverError = PublishSubject<Error>()
     let parsedError = PublishSubject<NetworkError>()
 
-    init(provider: WeChatProvider) {
+    init(_ provider: WeChatProvider) {
         self.provider = provider
         super.init()
 

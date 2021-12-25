@@ -8,9 +8,9 @@
 
 import AsyncDisplayKit
 
-public class ContactViewController: ViewController {
+class ContactViewController: ViewController {
 
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         node.backgroundColor = .blue
     }

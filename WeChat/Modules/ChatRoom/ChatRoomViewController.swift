@@ -9,9 +9,9 @@
 import AsyncDisplayKit
 import SwifterSwift
 
-public class ChatRoomViewController: ViewController {
+class ChatRoomViewController: ViewController {
 
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         title = "聊天室"
         node.backgroundColor = .random

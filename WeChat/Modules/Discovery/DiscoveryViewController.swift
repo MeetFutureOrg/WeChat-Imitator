@@ -8,9 +8,9 @@
 
 import AsyncDisplayKit
 
-public class DiscoveryViewController: ViewController {
+class DiscoveryViewController: ViewController {
 
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         node.backgroundColor = .green
     }

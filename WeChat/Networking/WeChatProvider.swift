@@ -10,3 +10,7 @@ import RxSwift
 import RxCocoa
 
 protocol WeChatProvider {}
+
+class RestfulAPI: WeChatProvider {
+    
+}

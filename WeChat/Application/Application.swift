@@ -13,18 +13,28 @@ let SharedApplication = Application.shared
 final class Application {
 
     static let shared = Application()
+    
+    var provider: WeChatProvider
+    let navigator: Navigator
 
     private weak var delegate: AppDelegate?
     private var launchOptions: [UIApplication.LaunchOptionsKey: Any]?
 
     private(set)
     var window: WeChatWindow = WeChatWindow(frame: UIScreen.main.bounds)
+    
+    private init() {
+        navigator = Navigator.default
+        provider = RestfulAPI()
+    }
 
     func initialize(delegate: AppDelegate, launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         self.delegate = delegate
         self.launchOptions = launchOptions
         delegate.window = self.window
         configWeChat()
+        let APPLICATION_END_TIME: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+        debugPrint(String(format: "WeChat: App startup time %.3lf", APPLICATION_END_TIME - APPLICATION_START_TIME))
     }
 
     private func configWeChat() {
@@ -50,7 +60,8 @@ final class Application {
     }
 
     private func configMainInterface() {
-        let tabBarController = MainTabBarController()
+        let viewModel = MainTabBarViewModel(provider)
+        let tabBarController = MainTabBarController(viewModel, navigator: navigator)
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
     }

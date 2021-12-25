@@ -9,11 +9,11 @@
 import AsyncDisplayKit
 import SwifterSwift
 
-public class ChatSessionViewController: ViewController {
+class ChatSessionViewController: ViewController {
 
     let tableNode = ASTableNode(style: .insetGrouped)
     
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         tableNode.delegate = self
@@ -22,22 +22,22 @@ public class ChatSessionViewController: ViewController {
         tableNode.backgroundColor = Color(hex: 0xFAFAFA)
     }
     
-    override public func viewDidLayoutSubviews() {
+    override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableNode.frame = view.bounds
     }
 }
 
 extension ChatSessionViewController: ASTableDataSource {
-    public func numberOfSections(in tableNode: ASTableNode) -> Int {
+    func numberOfSections(in tableNode: ASTableNode) -> Int {
         return 3
     }
     
-    public func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
+    func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
-    public func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
+    func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
         return {
             let cell = CellNode()
             return cell
@@ -46,8 +46,8 @@ extension ChatSessionViewController: ASTableDataSource {
 }
 
 extension ChatSessionViewController: ASTableDelegate {
-    public func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(ChatRoomViewController(), animated: true)
+    func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(ChatRoomViewController(viewModel: viewModel, navigator: navigator), animated: true)
     }
 }
 

@@ -57,59 +57,84 @@ enum MainTabBarItem: Int, CaseIterable {
         }
     }
     
-    private func controller(_ viewModel: ViewModel, navigator: Navigator) -> UIViewController {
+    private func childController(_ viewModel: ViewModel, navigator: Navigator) -> UIViewController {
         switch self {
         case .wechat:
-            let chatSession = ChatSessionViewController()
+            let chatSession = ChatSessionViewController(viewModel: viewModel, navigator: navigator)
             return NavigationController(rootViewController: chatSession)
         case .contact:
-            let contact = ContactViewController()
+            let contact = ContactViewController(viewModel: viewModel, navigator: navigator)
             return NavigationController(rootViewController: contact)
         case .discovery:
-            let discovery = DiscoveryViewController()
+            let discovery = DiscoveryViewController(viewModel: viewModel, navigator: navigator)
             return NavigationController(rootViewController: discovery)
         case .profile:
-            let profile = ProfileViewController()
+            let profile = ProfileViewController(viewModel: viewModel, navigator: navigator)
             return NavigationController(rootViewController: profile)
         }
+    }
+    
+    func getChildController(_ viewModel: ViewModel, navigator: Navigator) -> UIViewController {
+        let vc = childController(viewModel, navigator: navigator)
+        let item = UITabBarItem(title: title, image: image, tag: rawValue)
+        vc.tabBarItem = item
+        return vc
     }
 }
 
 class MainTabBarController: UITabBarController {
-
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        hidesBottomBarWhenPushed = true
-        setChildViewControllers()
+    
+    var viewModel: MainTabBarViewModel?
+    var navigator: Navigator
+    
+    init(_ viewModel: ViewModel?, navigator: Navigator) {
+        self.viewModel = viewModel as? MainTabBarViewModel
+        self.navigator = navigator
+        super.init(nibName: nil, bundle: nil)
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         ASDisableLogging()
+         // ASDisableLogging()
+        setupSubviews()
+        bindViewModel()
     }
 
-    func setChildViewControllers() {
+    func setupSubviews() {
 
-        let chatSessionViewController = ChatSessionViewController()
-        let chatSession = generateChildViewController(title: "微信", image: nil, selectedImage: nil, viewController: chatSessionViewController)
-        let contactViewController = ContactViewController()
-        let contact = generateChildViewController(title: "通讯录", image: nil, selectedImage: nil, viewController: contactViewController)
-        let discoveryViewController = DiscoveryViewController()
-        let discovery = generateChildViewController(title: "发现", image: nil, selectedImage: nil, viewController: discoveryViewController)
-        let profileViewController = ProfileViewController()
-        let profile = generateChildViewController(title: "我的", image: nil, selectedImage: nil, viewController: profileViewController)
+//        let chatSessionViewController = ChatSessionViewController()
+//        let chatSession = generateChildViewController(title: "微信", image: nil, selectedImage: nil, viewController: chatSessionViewController)
+//        let contactViewController = ContactViewController()
+//        let contact = generateChildViewController(title: "通讯录", image: nil, selectedImage: nil, viewController: contactViewController)
+//        let discoveryViewController = DiscoveryViewController()
+//        let discovery = generateChildViewController(title: "发现", image: nil, selectedImage: nil, viewController: discoveryViewController)
+//        let profileViewController = ProfileViewController()
+//        let profile = generateChildViewController(title: "我的", image: nil, selectedImage: nil, viewController: profileViewController)
+//
+//        let controllers = [
+//            chatSession,
+//            contact,
+//            discovery,
+//            profile
+//        ]
+//        setViewControllers(controllers, animated: false)
+    }
+    
+    func bindViewModel() {
+        guard let viewModel = viewModel else { return }
 
-        let controllers = [
-            chatSession,
-            contact,
-            discovery,
-            profile
-        ]
-        setViewControllers(controllers, animated: false)
+        let input = MainTabBarViewModel.Input(trigger: rx.viewDidAppear.mapToVoid())
+        let output = viewModel.transform(input: input)
+
+        output.tabBarItems.delay(.milliseconds(50)).drive(onNext: { [weak self] tabBarItems in
+            guard let self = self else { return }
+            let controllers = tabBarItems.map { $0.getChildController(viewModel.childViewModel(for: $0), navigator: self.navigator) }
+            self.setViewControllers(controllers, animated: false)
+        }).disposed(by: rx.disposeBag)
     }
 
     private func generateChildViewController(title: String?,

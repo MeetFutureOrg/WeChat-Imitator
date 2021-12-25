@@ -8,7 +8,7 @@
 
 import UIKit
 
-var START_TIME: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+let APPLICATION_START_TIME: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
 _ = UIApplicationMain(
     CommandLine.argc,
     UnsafeMutableRawPointer(CommandLine.unsafeArgv)

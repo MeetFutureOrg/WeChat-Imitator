@@ -61,6 +61,13 @@
 		A439E3102774D39200F9C7A3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A439E30F2774D39200F9C7A3 /* Navigator.swift */; };
 		A439E3122774D4B700F9C7A3 /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A439E3112774D4B700F9C7A3 /* MainTabBarViewModel.swift */; };
 		A43B3B672769A9680025B150 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B3B662769A9680025B150 /* main.swift */; };
+		A472E23E2776C7C3007315AB /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472E23D2776C7C3007315AB /* UIViewController+Rx.swift */; };
+		A472E2402776C82C007315AB /* ChatSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472E23F2776C82C007315AB /* ChatSessionViewModel.swift */; };
+		A472E2422776C835007315AB /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472E2412776C835007315AB /* ChatRoomViewModel.swift */; };
+		A472E2442776C83C007315AB /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472E2432776C83C007315AB /* ContactViewModel.swift */; };
+		A472E2462776C844007315AB /* DiscoveryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472E2452776C844007315AB /* DiscoveryViewModel.swift */; };
+		A472E2482776C84D007315AB /* ProfileViewModel.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472E2472776C84D007315AB /* ProfileViewModel.swift.swift */; };
+		A472E24A2776C854007315AB /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472E2492776C854007315AB /* AccountViewModel.swift */; };
 		A4DB700F276B5B7900C8FC62 /* RouterDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB700E276B5B7900C8FC62 /* RouterDispatcher.swift */; };
 		A4DB7011276B5C0000C8FC62 /* RouterDispatchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7010276B5C0000C8FC62 /* RouterDispatchType.swift */; };
 		B7C14DDDAF56C9B172F971BA /* Pods_WeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26A4EDA43AF6A6BE2D9B686 /* Pods_WeChat.framework */; };
@@ -184,6 +191,13 @@
 		A43B3BA12769C49E0025B150 /* ChatSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSession.swift; sourceTree = "<group>"; };
 		A43B3BA42769C9AA0025B150 /* WeChatWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatWindow.swift; sourceTree = "<group>"; };
 		A46A37F9F9BF57B927E38909 /* Pods-Resource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resource.debug.xcconfig"; path = "Target Support Files/Pods-Resource/Pods-Resource.debug.xcconfig"; sourceTree = "<group>"; };
+		A472E23D2776C7C3007315AB /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		A472E23F2776C82C007315AB /* ChatSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSessionViewModel.swift; sourceTree = "<group>"; };
+		A472E2412776C835007315AB /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
+		A472E2432776C83C007315AB /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		A472E2452776C844007315AB /* DiscoveryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewModel.swift; sourceTree = "<group>"; };
+		A472E2472776C84D007315AB /* ProfileViewModel.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift.swift; sourceTree = "<group>"; };
+		A472E2492776C854007315AB /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		A4A34B6B2769FFCA0063DAC2 /* ChatSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSessionViewController.swift; sourceTree = "<group>"; };
 		A4A34B90276A00A20063DAC2 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		A4A34B93276A00BD0063DAC2 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				A4A34B93276A00BD0063DAC2 /* ContactViewController.swift */,
+				A472E2432776C83C007315AB /* ContactViewModel.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -265,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				A4A34B96276A00E40063DAC2 /* DiscoveryViewController.swift */,
+				A472E2452776C844007315AB /* DiscoveryViewModel.swift */,
 			);
 			path = Discovery;
 			sourceTree = "<group>";
@@ -273,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				A4A34B99276A013B0063DAC2 /* ProfileViewController.swift */,
+				A472E2472776C84D007315AB /* ProfileViewModel.swift.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -281,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				A4A34B90276A00A20063DAC2 /* ChatRoomViewController.swift */,
+				A472E2412776C835007315AB /* ChatRoomViewModel.swift */,
 			);
 			path = ChatRoom;
 			sourceTree = "<group>";
@@ -289,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				A428FAC92774C22A00944E74 /* AccountViewController.swift */,
+				A472E2492776C854007315AB /* AccountViewModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -346,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				A4A34B6B2769FFCA0063DAC2 /* ChatSessionViewController.swift */,
+				A472E23F2776C82C007315AB /* ChatSessionViewModel.swift */,
 			);
 			path = ChatSession;
 			sourceTree = "<group>";
@@ -391,8 +411,8 @@
 			children = (
 				A411648A2767456300690C54 /* AppDelegate.swift */,
 				A40ADC4827697F4E00E2ECA7 /* Application.swift */,
-				A43B3B662769A9680025B150 /* main.swift */,
 				A439E30F2774D39200F9C7A3 /* Navigator.swift */,
+				A43B3B662769A9680025B150 /* main.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -607,6 +627,7 @@
 				A4DB7014276B5D9D00C8FC62 /* String+Extensions.swift */,
 				A428FAF92774CFB400944E74 /* CaseIterable+Extensions.swift */,
 				A439E30D2774D34500F9C7A3 /* Observable+Operators.swift */,
+				A472E23D2776C7C3007315AB /* UIViewController+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -795,11 +816,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A428FAD92774C2F500944E74 /* ViewModelType.swift in Sources */,
+				A472E2482776C84D007315AB /* ProfileViewModel.swift.swift in Sources */,
 				A428FAE62774C43200944E74 /* Single+ObjectMapper.swift in Sources */,
 				A41659CA276898C100F8AAB6 /* MainTabBarController.swift in Sources */,
 				A428FAE72774C43500944E74 /* ObservableType+ObjectMapper.swift in Sources */,
 				A428FAD72774C2CB00944E74 /* WeChatCompatible.swift in Sources */,
 				A428FAE52774C43000944E74 /* Response+ObjectMapper.swift in Sources */,
+				A472E23E2776C7C3007315AB /* UIViewController+Rx.swift in Sources */,
 				A428FAE32774C37300944E74 /* SearchViewController.swift in Sources */,
 				A428FAD02774C26C00944E74 /* WeChatWindow.swift in Sources */,
 				A428FAF32774C94D00944E74 /* ChatRoomPiece.swift in Sources */,
@@ -808,8 +831,10 @@
 				A428FAFA2774CFB400944E74 /* CaseIterable+Extensions.swift in Sources */,
 				A428FAF42774C94F00944E74 /* ContactPiece.swift in Sources */,
 				A428FAF52774C95100944E74 /* DiscoveryPiece.swift in Sources */,
+				A472E2442776C83C007315AB /* ContactViewModel.swift in Sources */,
 				A428FAF72774C95700944E74 /* AccountPiece.swift in Sources */,
 				A428FACC2774C23200944E74 /* DiscoveryViewController.swift in Sources */,
+				A472E2402776C82C007315AB /* ChatSessionViewModel.swift in Sources */,
 				A439E3082774D21A00F9C7A3 /* ActivityIndicator.swift in Sources */,
 				A428FAEF2774C94000944E74 /* Dispatcher.swift in Sources */,
 				A411648B2767456300690C54 /* AppDelegate.swift in Sources */,
@@ -836,6 +861,7 @@
 				A428FAEC2774C93800944E74 /* Tenon.swift in Sources */,
 				A439E30E2774D34500F9C7A3 /* Observable+Operators.swift in Sources */,
 				A43B3B672769A9680025B150 /* main.swift in Sources */,
+				A472E24A2776C854007315AB /* AccountViewModel.swift in Sources */,
 				A428FAEE2774C93E00944E74 /* RouterTenon.swift in Sources */,
 				A428FADA2774C2F700944E74 /* NavigationController.swift in Sources */,
 				A428FACF2774C23900944E74 /* ChatSessionViewController.swift in Sources */,
@@ -846,7 +872,9 @@
 				A428FAD52774C2C700944E74 /* HasDisposeBag.swift in Sources */,
 				A428FAE42774C42C00944E74 /* ChatSession.swift in Sources */,
 				A428FAD82774C2F300944E74 /* ViewController.swift in Sources */,
+				A472E2462776C844007315AB /* DiscoveryViewModel.swift in Sources */,
 				A428FAD22774C2A700944E74 /* Reachability+Rx.swift in Sources */,
+				A472E2422776C835007315AB /* ChatRoomViewModel.swift in Sources */,
 				A439E3062774D1BD00F9C7A3 /* WeChatProvider.swift in Sources */,
 				A428FACE2774C23700944E74 /* ChatRoomViewController.swift in Sources */,
 			);

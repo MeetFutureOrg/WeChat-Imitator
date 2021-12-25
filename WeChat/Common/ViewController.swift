@@ -8,17 +8,22 @@
 
 import AsyncDisplayKit
 
-open class ViewController: ASDKViewController<ASDisplayNode> {
+class ViewController: ASDKViewController<ASDisplayNode> {
+    
+    var viewModel: ViewModel?
+    var navigator: Navigator
 
-    override public init() {
+    init(viewModel: ViewModel?, navigator: Navigator) {
+        self.viewModel = viewModel
+        self.navigator = navigator
         super.init(node: ASDisplayNode())
     }
 
-    public required init?(coder: NSCoder) {
+    required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override open func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
