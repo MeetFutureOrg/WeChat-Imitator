@@ -30,7 +30,7 @@ enum MainTabBarItem: String, CaseIterable {
     }
 
     var image: UIImage? {
-        UIImage.svgImage(named: "icons_outlined_\(rawValue)", fillColor: Colors.tintColor)
+        UIImage.svgImage(named: "icons_outlined_\(rawValue)", fillColor: Colors.black)
     }
     
     var selectedImage: UIImage? {
