@@ -104,25 +104,7 @@ class MainTabBarController: UITabBarController {
         bindViewModel()
     }
 
-    func setupSubviews() {
-
-//        let chatSessionViewController = ChatSessionViewController()
-//        let chatSession = generateChildViewController(title: "微信", image: nil, selectedImage: nil, viewController: chatSessionViewController)
-//        let contactViewController = ContactViewController()
-//        let contact = generateChildViewController(title: "通讯录", image: nil, selectedImage: nil, viewController: contactViewController)
-//        let discoveryViewController = DiscoveryViewController()
-//        let discovery = generateChildViewController(title: "发现", image: nil, selectedImage: nil, viewController: discoveryViewController)
-//        let profileViewController = ProfileViewController()
-//        let profile = generateChildViewController(title: "我的", image: nil, selectedImage: nil, viewController: profileViewController)
-//
-//        let controllers = [
-//            chatSession,
-//            contact,
-//            discovery,
-//            profile
-//        ]
-//        setViewControllers(controllers, animated: false)
-    }
+    func setupSubviews() {}
     
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
@@ -137,16 +119,6 @@ class MainTabBarController: UITabBarController {
         }).disposed(by: rx.disposeBag)
     }
 
-    private func generateChildViewController(title: String?,
-                                             image: UIImage?,
-                                             selectedImage: UIImage?,
-                                             viewController: ViewController) -> NavigationController {
-
-        let navigationController = NavigationController(rootViewController: viewController)
-        navigationController.tabBarItem = UITabBarItem(title: title, image: image, selectedImage: selectedImage)
-        return navigationController
-    }
-    
     // MARK: - For ASManagesChildVisibilityDepth Use
     private var _parentManagesVisibilityDepth: Bool = false
     private var _visibilityDepth: Int = 0
