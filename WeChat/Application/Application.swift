@@ -24,7 +24,7 @@ final class Application {
     var window: WeChatWindow = WeChatWindow(frame: UIScreen.main.bounds)
     
     private init() {
-        navigator = Navigator.default
+        navigator = Navigator.`default`
         provider = RestfulAPI()
     }
 
