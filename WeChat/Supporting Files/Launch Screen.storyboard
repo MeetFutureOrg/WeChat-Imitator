@@ -2,8 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,23 +12,23 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="56H-ba-pIj"/>
-                        <viewControllerLayoutGuide type="bottom" id="Zl9-R0-zG6"/>
+                        <viewControllerLayoutGuide type="top" id="ik3-az-qkx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Veg-VY-23K"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BootImage" translatesAutoresizingMaskIntoConstraints="NO" id="lT1-EH-9Ds">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BootImage" translatesAutoresizingMaskIntoConstraints="NO" id="xfB-Ho-fNF">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lT1-EH-9Ds" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="Gkm-lJ-ejY"/>
-                            <constraint firstItem="lT1-EH-9Ds" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ubp-dR-7yH"/>
-                            <constraint firstItem="lT1-EH-9Ds" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="VaP-p7-9Jm"/>
-                            <constraint firstItem="lT1-EH-9Ds" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="rnZ-3v-Bxa"/>
+                            <constraint firstItem="xfB-Ho-fNF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="F7f-94-eov"/>
+                            <constraint firstAttribute="trailing" secondItem="xfB-Ho-fNF" secondAttribute="trailing" id="FJd-aT-n5q"/>
+                            <constraint firstAttribute="bottom" secondItem="xfB-Ho-fNF" secondAttribute="bottom" id="Rzx-ht-WaZ"/>
+                            <constraint firstItem="xfB-Ho-fNF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Tuw-Ao-Fc1"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,8 +39,5 @@
     </scenes>
     <resources>
         <image name="BootImage" width="414" height="896"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

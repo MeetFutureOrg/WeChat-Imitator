@@ -73,6 +73,7 @@
 		A4C49FEC27770E3500CCDFA0 /* UIImage+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FEB27770E3500CCDFA0 /* UIImage+SVG.swift */; };
 		A4C49FEE27770F4500CCDFA0 /* SVGImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FED27770F4500CCDFA0 /* SVGImage+Extensions.swift */; };
 		A4C49FF02777123D00CCDFA0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FEF2777123D00CCDFA0 /* Colors.swift */; };
+		A4C49FF227771A5F00CCDFA0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C49FF127771A5F00CCDFA0 /* Launch Screen.storyboard */; };
 		A4DB700F276B5B7900C8FC62 /* RouterDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB700E276B5B7900C8FC62 /* RouterDispatcher.swift */; };
 		A4DB7011276B5C0000C8FC62 /* RouterDispatchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7010276B5C0000C8FC62 /* RouterDispatchType.swift */; };
 		B7C14DDDAF56C9B172F971BA /* Pods_WeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26A4EDA43AF6A6BE2D9B686 /* Pods_WeChat.framework */; };
@@ -213,7 +214,7 @@
 		A4C49FEB27770E3500CCDFA0 /* UIImage+SVG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SVG.swift"; sourceTree = "<group>"; };
 		A4C49FED27770F4500CCDFA0 /* SVGImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVGImage+Extensions.swift"; sourceTree = "<group>"; };
 		A4C49FEF2777123D00CCDFA0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		A4DB6FC4276AE56100C8FC62 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4C49FF127771A5F00CCDFA0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A4DB700E276B5B7900C8FC62 /* RouterDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDispatcher.swift; sourceTree = "<group>"; };
 		A4DB7010276B5C0000C8FC62 /* RouterDispatchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDispatchType.swift; sourceTree = "<group>"; };
 		A4DB7014276B5D9D00C8FC62 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -592,7 +593,7 @@
 		A4DB6FBF276AE52F00C8FC62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A4DB6FC4276AE56100C8FC62 /* LaunchScreen.storyboard */,
+				A4C49FF127771A5F00CCDFA0 /* Launch Screen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -761,6 +762,7 @@
 			files = (
 				A41164942767456500690C54 /* Assets.xcassets in Resources */,
 				A4806F0B2776FDDD0052E5BE /* SVG.bundle in Resources */,
+				A4C49FF227771A5F00CCDFA0 /* Launch Screen.storyboard in Resources */,
 				A48066972776FC770052E5BE /* Expression.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1030,7 +1032,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1057,7 +1059,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

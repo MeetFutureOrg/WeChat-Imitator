@@ -100,6 +100,7 @@ class MainTabBarController: UITabBarController {
 
     func setupSubviews() {
         tabBar.tintColor = Colors.tintColor
+        tabBar.unselectedItemTintColor = Colors.black
     }
     
     func bindViewModel() {
