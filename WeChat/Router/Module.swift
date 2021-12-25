@@ -11,9 +11,9 @@ import Foundation
 public enum Module: String, CaseIterable {
     case ChatSession
     case ChatRoom
-    case Contact
-    case Discovery
-    case Profile
+    case Contacts
+    case Discover
+    case Me
     case Account
     case Model
     case Context
@@ -35,9 +35,9 @@ extension Module {
         switch self {
         case  .ChatSession: return true
         case  .ChatRoom: return true
-        case  .Contact: return true
-        case  .Discovery: return true
-        case  .Profile: return true
+        case  .Contacts: return true
+        case  .Discover: return true
+        case  .Me: return true
         case  .Account: return true
         case  .Search: return true
 
@@ -66,16 +66,16 @@ extension Router {
         return Router.resolve(ChatRoomPiece.self)
     }
 
-    public static var Contact: ContactPiece? {
-        return Router.resolve(ContactPiece.self)
+    public static var Contacts: ContactsPiece? {
+        return Router.resolve(ContactsPiece.self)
     }
 
-    public static var Discovery: DiscoveryPiece? {
-        return Router.resolve(DiscoveryPiece.self)
+    public static var Discover: DiscoverPiece? {
+        return Router.resolve(DiscoverPiece.self)
     }
 
-    public static var Profile: ProfilePiece? {
-        return Router.resolve(ProfilePiece.self)
+    public static var Me: MePiece? {
+        return Router.resolve(MePiece.self)
     }
 
     public static var Account: AccountPiece? {

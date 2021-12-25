@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.5.0)
+  - CocoaLumberjack (3.7.4):
+    - CocoaLumberjack/Core (= 3.7.4)
+  - CocoaLumberjack/Core (3.7.4)
   - DeepDiff (2.3.1)
   - DeviceKit (4.5.2)
   - Differentiator (5.0.0)
@@ -8,15 +11,6 @@ PODS:
   - HBDNavigationBar (1.9.3)
   - ImageViewer (6.0.0)
   - Kingfisher (7.1.2)
-  - matrix-wechat (1.0.1):
-    - matrix-wechat/matrixARC (= 1.0.1)
-    - matrix-wechat/matrixNonARC1 (= 1.0.1)
-    - matrix-wechat/matrixNonARC2 (= 1.0.1)
-  - matrix-wechat/matrixARC (1.0.1):
-    - matrix-wechat/matrixNonARC1
-  - matrix-wechat/matrixNonARC1 (1.0.1)
-  - matrix-wechat/matrixNonARC2 (1.0.1):
-    - matrix-wechat/matrixARC
   - MMKV (1.2.11):
     - MMKVCore (~> 1.2.11)
   - MMKVCore (1.2.11)
@@ -76,6 +70,8 @@ PODS:
     - WCDBOptimizedSQLCipher (~> 1.2.0)
   - SSZipArchive (2.4.2)
   - SteviaLayout (4.7.3)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
   - SwiftDate (6.3.1)
   - SwifterSwift (5.2.0):
     - SwifterSwift/AppKit (= 5.2.0)
@@ -103,7 +99,6 @@ PODS:
   - SwifterSwift/SwiftStdlib (5.2.0)
   - SwifterSwift/UIKit (5.2.0)
   - SwiftLint (0.45.1)
-  - SwiftyUserDefaults (5.3.0)
   - SwipeCellKit (2.7.1)
   - Texture (3.1.0):
     - Texture/AssetsLibrary (= 3.1.0)
@@ -143,7 +138,6 @@ DEPENDENCIES:
   - HBDNavigationBar
   - ImageViewer
   - Kingfisher
-  - matrix-wechat
   - MMKV
   - Moya/RxSwift
   - NextGrowingTextView
@@ -158,10 +152,10 @@ DEPENDENCIES:
   - RxSwiftExt
   - SnapKit
   - SSZipArchive
+  - SVGKit
   - SwiftDate
   - SwifterSwift
   - SwiftLint
-  - SwiftyUserDefaults
   - SwipeCellKit
   - Texture
   - WCDB.swift
@@ -171,6 +165,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CocoaLumberjack
     - DeepDiff
     - DeviceKit
     - Differentiator
@@ -179,7 +174,6 @@ SPEC REPOS:
     - HBDNavigationBar
     - ImageViewer
     - Kingfisher
-    - matrix-wechat
     - MMKV
     - MMKVCore
     - Moya
@@ -202,10 +196,10 @@ SPEC REPOS:
     - SQLiteRepairKit
     - SSZipArchive
     - SteviaLayout
+    - SVGKit
     - SwiftDate
     - SwifterSwift
     - SwiftLint
-    - SwiftyUserDefaults
     - SwipeCellKit
     - Texture
     - WCDB.swift
@@ -215,6 +209,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   DeepDiff: e5ae6c50d0321568e4508cec5930b9f10bb293fc
   DeviceKit: c622fc19f795f3e0b4d75d6d11b26604338cdab3
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
@@ -223,7 +218,6 @@ SPEC CHECKSUMS:
   HBDNavigationBar: a96fb380ca52622caa6272665460e0f2ea6a8bfe
   ImageViewer: cb88ef1c0ba19161bc10702adfdcebc116a7a59d
   Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
-  matrix-wechat: db0ef2c0bfe982aa9c2c42aa409c48724bedc507
   MMKV: 217b643c181c3d2f71983206ca1972d0a6e99881
   MMKVCore: f9e4f56742fdebbd042f7a273e278927f182cee7
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
@@ -246,10 +240,10 @@ SPEC CHECKSUMS:
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   SSZipArchive: e7b4f3d9e780c2acc1764cd88fbf2de28f26e5b2
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftLint: 06ac37e4d38c7068e0935bb30cda95f093bec761
-  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
   Texture: 2e8ab2519452515f7f5a520f5a8f7e0a413abfa3
   WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
@@ -257,6 +251,6 @@ SPEC CHECKSUMS:
   Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
   YPImagePicker: 1463a19a36244e209dcb03c30e63559c5afa9602
 
-PODFILE CHECKSUM: de041623a536f647dac5f4972f12b1c42b4033be
+PODFILE CHECKSUM: 3f1f152404eeab30781577b7606b2b1f2f811cc4
 
 COCOAPODS: 1.11.2

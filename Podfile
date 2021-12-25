@@ -73,6 +73,10 @@ def image_picker
   pod 'YPImagePicker'
 end
 
+def svg_kit
+  pod 'SVGKit'
+end
+
 def swipe_cell
   pod 'SwipeCellKit'
 end
@@ -109,10 +113,6 @@ def object_mapper
   pod 'ObjectMapper'
 end
 
-def user_defaults
-  pod 'SwiftyUserDefaults'
-end
-
 def reachability
   pod 'ReachabilitySwift'
 end
@@ -127,7 +127,6 @@ def lint
 end
 
 def debugging_tools()
-  pod 'matrix-wechat'
   pod 'FLEX', :configurations => ['Debug']
   pod 'Wormholy', :configurations => ['Debug']
 end
@@ -150,6 +149,7 @@ target 'WeChat' do
   snap_kit
   swipe_cell
   text_view
+  svg_kit
   image_viewer
   image_picker
   navigation_bar
@@ -163,7 +163,6 @@ target 'WeChat' do
   
   diff
   
-  user_defaults
   mmkv
   wcdb
   zip

@@ -10,73 +10,67 @@ import AsyncDisplayKit
 import RxSwift
 import UIKit
 
-enum MainTabBarItem: Int, CaseIterable {
-    case wechat
-    case contact
-    case discovery
-    case profile
+enum MainTabBarItem: String, CaseIterable {
+    case chats
+    case contacts
+    case discover
+    case me
     
     var title: String {
         switch self {
-        case .wechat:
+        case .chats:
             return "微信"
-        case .contact:
+        case .contacts:
             return "联系人"
-        case .discovery:
+        case .discover:
             return "发现"
-        case .profile:
+        case .me:
             return "我"
         }
     }
 
-    // TODO: - need to replace
-    var image: UIImage {
-        switch self {
-        case .wechat:
-            return UIImage()
-        case .contact:
-            return UIImage()
-        case .discovery:
-            return UIImage()
-        case .profile:
-            return UIImage()
-        }
+    var image: UIImage? {
+        UIImage.svgImage(named: "icons_outlined_\(rawValue)", fillColor: Colors.tintColor)
     }
     
-    // TODO: - need to replace
-    var selectedImage: UIImage {
+    var selectedImage: UIImage? {
+        UIImage.svgImage(named: "icons_filled_\(rawValue)", fillColor: Colors.tintColor)
+    }
+    
+    var tag: Int {
         switch self {
-        case .wechat:
-            return UIImage()
-        case .contact:
-            return UIImage()
-        case .discovery:
-            return UIImage()
-        case .profile:
-            return UIImage()
+        case .chats:
+            return 0
+        case .contacts:
+            return 1
+        case .discover:
+            return 2
+        case .me:
+            return 3
         }
     }
     
     private func childController(_ viewModel: ViewModel, navigator: Navigator) -> UIViewController {
         switch self {
-        case .wechat:
+        case .chats:
             let chatSession = ChatSessionViewController(viewModel: viewModel, navigator: navigator)
             return NavigationController(rootViewController: chatSession)
-        case .contact:
-            let contact = ContactViewController(viewModel: viewModel, navigator: navigator)
-            return NavigationController(rootViewController: contact)
-        case .discovery:
-            let discovery = DiscoveryViewController(viewModel: viewModel, navigator: navigator)
-            return NavigationController(rootViewController: discovery)
-        case .profile:
-            let profile = ProfileViewController(viewModel: viewModel, navigator: navigator)
-            return NavigationController(rootViewController: profile)
+        case .contacts:
+            let contacts = ContactsViewController(viewModel: viewModel, navigator: navigator)
+            return NavigationController(rootViewController: contacts)
+        case .discover:
+            let discover = DiscoverViewController(viewModel: viewModel, navigator: navigator)
+            return NavigationController(rootViewController: discover)
+        case .me:
+            let me = MeViewController(viewModel: viewModel, navigator: navigator)
+            return NavigationController(rootViewController: me)
         }
     }
     
     func getChildController(_ viewModel: ViewModel, navigator: Navigator) -> UIViewController {
         let vc = childController(viewModel, navigator: navigator)
-        let item = UITabBarItem(title: title, image: image, tag: rawValue)
+        let item = UITabBarItem(title: title, image: image, selectedImage: selectedImage)
+        item.tag = tag
         vc.tabBarItem = item
         return vc
     }
@@ -104,7 +98,9 @@ class MainTabBarController: UITabBarController {
         bindViewModel()
     }
 
-    func setupSubviews() {}
+    func setupSubviews() {
+        tabBar.tintColor = Colors.tintColor
+    }
     
     func bindViewModel() {
         guard let viewModel = viewModel else { return }

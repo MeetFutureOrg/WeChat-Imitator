@@ -35,7 +35,6 @@ opt_in_rules: # 某些规则默认是 disabled的, 需要的话放在这里启�
     - lower_acl_than_parent
     - modifier_order
     - number_separator
-    - object_literal
     - operator_usage_whitespace
     - overridden_super_call
     - override_in_extension

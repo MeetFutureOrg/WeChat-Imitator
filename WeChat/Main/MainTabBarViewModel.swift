@@ -21,23 +21,23 @@ class MainTabBarViewModel: ViewModel, ViewModelType {
 
     func transform(input: Input) -> Output {
 
-        let tabBarItems = Observable<[MainTabBarItem]>.just([.wechat, .contact, .discovery, .profile]).asDriver(onErrorJustReturn: [])
+        let tabBarItems = Observable<[MainTabBarItem]>.just([.chats, .contacts, .discover, .me]).asDriver(onErrorJustReturn: [])
         return Output(tabBarItems: tabBarItems)
     }
 
     func childViewModel(for tabBarItem: MainTabBarItem) -> ViewModel {
         switch tabBarItem {
-        case .wechat:
+        case .chats:
             let viewModel = ChatSessionViewModel(provider)
             return viewModel
-        case .contact:
-            let viewModel = ContactViewModel(provider)
+        case .contacts:
+            let viewModel = ContactsViewModel(provider)
             return viewModel
-        case .discovery:
-            let viewModel = DiscoveryViewModel(provider)
+        case .discover:
+            let viewModel = DiscoverViewModel(provider)
             return viewModel
-        case .profile:
-            let viewModel = ProfileViewModel(provider)
+        case .me:
+            let viewModel = MeViewModel(provider)
             return viewModel
         }
     }
