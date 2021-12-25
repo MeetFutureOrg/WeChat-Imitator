@@ -58,7 +58,6 @@ class TableViewController: ASDKViewController<ASTableNode>, ViewControllerType {
     
     var inset: CGFloat = Configuration.Dimensions.inset
     
-    
     let headerRefreshTrigger = PublishSubject<Void>()
     let footerRefreshTrigger = PublishSubject<Void>()
 
