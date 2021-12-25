@@ -74,6 +74,11 @@
 		A4C49FEE27770F4500CCDFA0 /* SVGImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FED27770F4500CCDFA0 /* SVGImage+Extensions.swift */; };
 		A4C49FF02777123D00CCDFA0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FEF2777123D00CCDFA0 /* Colors.swift */; };
 		A4C49FF227771A5F00CCDFA0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C49FF127771A5F00CCDFA0 /* Launch Screen.storyboard */; };
+		A4C49FF42777262900CCDFA0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FF32777262900CCDFA0 /* TableViewController.swift */; };
+		A4C49FF627772C4C00CCDFA0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FF527772C4C00CCDFA0 /* SearchBar.swift */; };
+		A4C49FF827772CB200CCDFA0 /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FF727772CB200CCDFA0 /* BarButtonItem.swift */; };
+		A4C49FFD27772DEF00CCDFA0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FFC27772DEF00CCDFA0 /* Configuration.swift */; };
+		A4C49FFF2777309600CCDFA0 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FFE2777309600CCDFA0 /* ViewControllerType.swift */; };
 		A4DB700F276B5B7900C8FC62 /* RouterDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB700E276B5B7900C8FC62 /* RouterDispatcher.swift */; };
 		A4DB7011276B5C0000C8FC62 /* RouterDispatchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7010276B5C0000C8FC62 /* RouterDispatchType.swift */; };
 		B7C14DDDAF56C9B172F971BA /* Pods_WeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26A4EDA43AF6A6BE2D9B686 /* Pods_WeChat.framework */; };
@@ -215,6 +220,11 @@
 		A4C49FED27770F4500CCDFA0 /* SVGImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVGImage+Extensions.swift"; sourceTree = "<group>"; };
 		A4C49FEF2777123D00CCDFA0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A4C49FF127771A5F00CCDFA0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A4C49FF32777262900CCDFA0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A4C49FF527772C4C00CCDFA0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		A4C49FF727772CB200CCDFA0 /* BarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
+		A4C49FFC27772DEF00CCDFA0 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		A4C49FFE2777309600CCDFA0 /* ViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
 		A4DB700E276B5B7900C8FC62 /* RouterDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDispatcher.swift; sourceTree = "<group>"; };
 		A4DB7010276B5C0000C8FC62 /* RouterDispatchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDispatchType.swift; sourceTree = "<group>"; };
 		A4DB7014276B5D9D00C8FC62 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -347,11 +357,15 @@
 			isa = PBXGroup;
 			children = (
 				A41659C72768981500F8AAB6 /* ViewController.swift */,
+				A4C49FF32777262900CCDFA0 /* TableViewController.swift */,
 				A40ADC4B2769822C00E2ECA7 /* ViewModelType.swift */,
+				A4C49FFE2777309600CCDFA0 /* ViewControllerType.swift */,
 				A41659CB27689B2D00F8AAB6 /* NavigationController.swift */,
 				A43B3B3B27699E5D0025B150 /* DispatchResult.swift */,
 				A439E3032774D17A00F9C7A3 /* ViewModel.swift */,
 				A4C49FEF2777123D00CCDFA0 /* Colors.swift */,
+				A4C49FF527772C4C00CCDFA0 /* SearchBar.swift */,
+				A4C49FF727772CB200CCDFA0 /* BarButtonItem.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -411,6 +425,7 @@
 				A4DB6FE2276AE78200C8FC62 /* Component */,
 				A43B3B4327699EA30025B150 /* Router */,
 				A40ADCF227698A7800E2ECA7 /* Utilities */,
+				A4C49FFB27772DD700CCDFA0 /* Configuration */,
 				A4DB700D276B5B5E00C8FC62 /* DispatchCenter */,
 				A41164A527682E3C00690C54 /* Resources */,
 				A4DB6FBF276AE52F00C8FC62 /* Supporting Files */,
@@ -588,6 +603,14 @@
 				A43B3BA42769C9AA0025B150 /* WeChatWindow.swift */,
 			);
 			path = Window;
+			sourceTree = "<group>";
+		};
+		A4C49FFB27772DD700CCDFA0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A4C49FFC27772DEF00CCDFA0 /* Configuration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		A4DB6FBF276AE52F00C8FC62 /* Supporting Files */ = {
@@ -836,6 +859,7 @@
 			files = (
 				A428FAD92774C2F500944E74 /* ViewModelType.swift in Sources */,
 				A472E2482776C84D007315AB /* MeViewModel.swift in Sources */,
+				A4C49FF827772CB200CCDFA0 /* BarButtonItem.swift in Sources */,
 				A428FAE62774C43200944E74 /* Single+ObjectMapper.swift in Sources */,
 				A41659CA276898C100F8AAB6 /* MainTabBarController.swift in Sources */,
 				A4C49FEC27770E3500CCDFA0 /* UIImage+SVG.swift in Sources */,
@@ -846,9 +870,11 @@
 				A428FAE32774C37300944E74 /* SearchViewController.swift in Sources */,
 				A428FAD02774C26C00944E74 /* WeChatWindow.swift in Sources */,
 				A428FAF32774C94D00944E74 /* ChatRoomPiece.swift in Sources */,
+				A4C49FFF2777309600CCDFA0 /* ViewControllerType.swift in Sources */,
 				A428FAE92774C44900944E74 /* AssetManager.swift in Sources */,
 				A428FAF02774C94300944E74 /* Module.swift in Sources */,
 				A428FAFA2774CFB400944E74 /* CaseIterable+Extensions.swift in Sources */,
+				A4C49FFD27772DEF00CCDFA0 /* Configuration.swift in Sources */,
 				A428FAF42774C94F00944E74 /* ContactsPiece.swift in Sources */,
 				A428FAF52774C95100944E74 /* DiscoverPiece.swift in Sources */,
 				A472E2442776C83C007315AB /* ContactsViewModel.swift in Sources */,
@@ -860,6 +886,7 @@
 				A428FAEF2774C94000944E74 /* Dispatcher.swift in Sources */,
 				A411648B2767456300690C54 /* AppDelegate.swift in Sources */,
 				A428FAF62774C95500944E74 /* MePiece.swift in Sources */,
+				A4C49FF627772C4C00CCDFA0 /* SearchBar.swift in Sources */,
 				A439E3122774D4B700F9C7A3 /* MainTabBarViewModel.swift in Sources */,
 				A439E30A2774D25B00F9C7A3 /* NetworkError.swift in Sources */,
 				A428FAD32774C2C100944E74 /* String+Extensions.swift in Sources */,
@@ -895,6 +922,7 @@
 				A428FAE42774C42C00944E74 /* ChatSession.swift in Sources */,
 				A428FAD82774C2F300944E74 /* ViewController.swift in Sources */,
 				A472E2462776C844007315AB /* DiscoverViewModel.swift in Sources */,
+				A4C49FF42777262900CCDFA0 /* TableViewController.swift in Sources */,
 				A428FAD22774C2A700944E74 /* Reachability+Rx.swift in Sources */,
 				A472E2422776C835007315AB /* ChatRoomViewModel.swift in Sources */,
 				A439E3062774D1BD00F9C7A3 /* WeChatProvider.swift in Sources */,
