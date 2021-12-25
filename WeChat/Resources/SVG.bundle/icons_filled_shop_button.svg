@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>画板</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="62.6160324%" y1="0%" x2="17.5057545%" y2="84.1694325%" id="linearGradient-1">
+            <stop stop-color="#8385EC" offset="0%"></stop>
+            <stop stop-color="#6567E8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="购物袋备份" fill="url(#linearGradient-1)">
+            <rect id="Rectangle" x="3.55271368e-15" y="3.55271368e-15" width="40" height="40" rx="20"></rect>
+        </g>
+    </g>
+</svg>

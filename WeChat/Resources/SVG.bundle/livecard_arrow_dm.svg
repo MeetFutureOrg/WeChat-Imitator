@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Arrow_down_DM</title>
+    <g id="210729直播卡片折叠" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-57.000000, -46.000000)" fill="#FFFFFF">
+            <g id="Arrow_down_DM" transform="translate(57.000000, 46.000000)">
+                <circle id="Combined-Shape" fill-opacity="0.05" transform="translate(6.000000, 6.000000) scale(-1, 1) translate(-6.000000, -6.000000) " cx="6" cy="6" r="6"></circle>
+                <g id="编组" transform="translate(3.000000, 1.000000)" fill-opacity="0.8">
+                    <g id="0.图标/线型/icons_outlined_arrow" transform="translate(3.000000, 5.500000) rotate(90.000000) translate(-3.000000, -5.500000) ">
+                        <path d="M1.22702923,3.01613088 L1.75735931,2.52999496 L4.64680783,5.17865611 C4.84187048,5.35746353 4.8436007,5.64578162 4.64680783,5.82617508 L1.75735931,8.47483622 L1.22702923,7.98870031 L3.93933983,5.50241559 L1.22702923,3.01613088 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

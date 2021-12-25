@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="6px" viewBox="0 0 12 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>气泡嘴三角形</title>
+    <g id="输入框（替换）翻译" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="按住说话备份-32" transform="translate(-64.000000, -495.000000)" fill="#FFFFFF">
+            <path d="M64,495 L76,495 L70.7071068,500.292893 C70.3165825,500.683418 69.6834175,500.683418 69.2928932,500.292893 L64,495 L64,495 Z" id="气泡嘴三角形" transform="translate(70.000000, 498.000000) scale(1, -1) rotate(-180.000000) translate(-70.000000, -498.000000) "></path>
+        </g>
+    </g>
+</svg>

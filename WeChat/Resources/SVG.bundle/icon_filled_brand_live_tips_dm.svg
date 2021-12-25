@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="18px" viewBox="0 0 52 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>live_tips_dm</title>
+    <g id="live_tips_dm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="直播-昵称后">
+            <rect id="矩形备份" fill-opacity="0.2" fill="#FF6146" x="0" y="0" width="52" height="18" rx="2"></rect>
+            <text id="直播中" font-family="PingFangSC-Regular, PingFang SC" font-size="10" font-weight="normal" fill="#FF6146">
+                <tspan x="18" y="13">直播中</tspan>
+            </text>
+            <g id="live_icon" transform="translate(4.000000, 3.000000)">
+                <rect id="矩形" x="0" y="0" width="12" height="12"></rect>
+                <path d="M6,1 C8.76142375,1 11,3.23857625 11,6 C11,8.76142375 8.76142375,11 6,11 C3.23857625,11 1,8.76142375 1,6 C1,3.23857625 3.23857625,1 6,1 Z M6,1.75 C3.65278981,1.75 1.75,3.65278981 1.75,6 C1.75,8.34721019 3.65278981,10.25 6,10.25 C8.34721019,10.25 10.25,8.34721019 10.25,6 C10.25,3.65278981 8.34721019,1.75 6,1.75 Z" id="椭圆形备份-7" fill="#FF6146" fill-rule="nonzero"></path>
+                <circle id="椭圆形备份-8" fill="#FF6146" cx="6" cy="6" r="2.75"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

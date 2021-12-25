@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons_filled_outlined_comment</title>
+    <g id="icons_filled_outlined_comment" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.9">
+        <g id="Group-22" fill="#000000">
+            <path d="M20.5,4 C21.2796961,4 21.9204487,4.59488808 21.9931334,5.35553999 L22,5.5 L22,17.5 C22,18.2796961 21.4051119,18.9204487 20.64446,18.9931334 L20.5,19 L11.332,19 L7.6,21.8 C7.1581722,22.1313708 6.53137085,22.0418278 6.2,21.6 C6.07017787,21.4269038 6,21.2163702 6,21 L6,19 L3.5,19 C2.72030388,19 2.07955132,18.4051119 2.00686658,17.64446 L2,17.5 L2,5.5 C2,4.72030388 2.59488808,4.07955132 3.35553999,4.00686658 L3.5,4 L20.5,4 Z M4,5.997 L3.997,17 L8,17 L8,18.999 L10.6651428,17 L20,17.002 L20.002,6 L4,5.997 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

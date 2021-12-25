@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="72px" viewBox="0 0 32 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>矩形备份 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="40.0580512%" id="linearGradient-1">
+            <stop stop-color="#191919" stop-opacity="0.3" offset="0%"></stop>
+            <stop stop-color="#191919" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="-------*Tipsbar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,0 L32,0 L32,64 C32,68.418278 28.418278,72 24,72 L8,72 C3.581722,72 5.41083001e-16,68.418278 0,64 L0,0 L0,0 Z" id="矩形备份-2" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>

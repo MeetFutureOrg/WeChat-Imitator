@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="216px" viewBox="0 0 16 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 8备份</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.138866078" offset="18.2306463%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="4月22日--微信连麦---视觉标注" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-362.000000, -115.000000)" fill="url(#linearGradient-1)">
+            <g id="编组-8备份" transform="translate(370.000000, 223.000000) scale(1, -1) translate(-370.000000, -223.000000) translate(362.000000, 115.000000)">
+                <rect id="矩形" transform="translate(8.000000, 108.000000) scale(1, -1) translate(-8.000000, -108.000000) " x="0" y="0" width="16" height="216"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

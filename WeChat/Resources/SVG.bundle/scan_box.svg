@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="338px" height="338px" viewBox="0 0 338 338" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>scan box</title>
+    <desc>Created with Sketch.</desc>
+    <g id="分tab方案-|-iOS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9">
+        <g id="兜底方案" transform="translate(-38.000000, -225.000000)" fill="#FFFFFF">
+            <g id="编组-2" transform="translate(38.000000, 225.000000)">
+                <g id="scan-box">
+                    <path d="M4,322 L4,334 L16,334 L16,338 L1,338 C0.44771525,338 0,337.552285 0,337 L0,322 L4,322 Z M338,322 L338,337 C338,337.552285 337.552285,338 337,338 L337,338 L322,338 L322,334 L334,334 L334,322 L338,322 Z M16,0 L16,4 L4,4 L4,16 L0,16 L0,1 C0,0.44771525 0.44771525,0 1,0 L1,0 L16,0 Z M337,0 C337.552285,0 338,0.44771525 338,1 L338,16 L334,16 L334,4 L322,4 L322,0 L337,0 Z" id="形状结合"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

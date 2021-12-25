@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons_filled_coin_gold</title>
+    <defs>
+        <linearGradient x1="16.0123698%" y1="7.46419271%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFA800" offset="0%"></stop>
+            <stop stop-color="#FFC411" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F47B19" offset="0%"></stop>
+            <stop stop-color="#FEA237" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icons_filled_coin_gold" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="金币备份-9">
+            <g transform="translate(-2.000000, -2.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="10" cy="10" r="6.66666667"></circle>
+                <circle id="Oval" fill="url(#linearGradient-2)" opacity="0.800000012" cx="10" cy="10" r="4.83333333"></circle>
+                <path d="M7.87414922,8.4 L7.14398411,8.4 L8.41810872,11.819 L9.21969052,11.819 L10,9.42421738 L10.7803095,11.819 L11.5818913,11.819 L12.8560159,8.4 L12.1258221,8.4 L11.2046718,10.8712918 L10.3992273,8.4 L9.60074233,8.4 L8.79420894,10.8712893 L7.87414922,8.4 Z" id="形状结合" stroke="#FFFFFF" stroke-width="0.2" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

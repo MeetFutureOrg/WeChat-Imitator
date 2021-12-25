@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="20px" viewBox="0 0 96 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板</title>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.3">
+        <path d="M0,0 L96,0 L87.0438244,15.9220899 C85.626878,18.4411058 82.9614066,20 80.0712201,20 L15.9287799,20 C13.0385934,20 10.373122,18.4411058 8.95617558,15.9220899 L0,0 L0,0 Z" id="矩形" fill="#000000"></path>
+    </g>
+</svg>

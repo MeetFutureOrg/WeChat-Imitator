@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow</title>
+    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iOS/☀/Loading/Loading-Percent" transform="translate(6.000000, 6.000000) rotate(-180.000000) translate(-6.000000, -6.000000) translate(0.000000, 1.000000)">
+            <rect id="矩形" x="0" y="0" width="12" height="10"></rect>
+            <path d="M3.56165033,1.25 L4.78468908,2.5 L3.202,4.116 L6.81108603,4.11611652 L6.81108603,5.88388348 L3.203,5.883 L4.78468908,7.5 L3.56165033,8.75 L0.0667123689,5.17801797 C-0.0300918666,5.07907973 -0.0300918666,4.92092027 0.0667123689,4.82198203 L1.11557282,3.75 L3.56165033,1.25 Z M9.40554302,4.11611652 L9.40554302,5.88388348 L7.67590503,5.88388348 L7.67590503,4.11611652 L9.40554302,4.11611652 Z M12,4.11611652 L12,5.88388348 L10.270362,5.88388348 L10.270362,4.11611652 L12,4.11611652 Z" id="Combined-Shape" fill-opacity="0.9" fill="#000000"></path>
+        </g>
+    </g>
+</svg>

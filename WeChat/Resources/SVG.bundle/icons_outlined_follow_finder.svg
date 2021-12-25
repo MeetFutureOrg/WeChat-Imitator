@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icons_outlined_follow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons_outlined_follow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <circle id="椭圆形" fill="#FFFFFF" cx="36" cy="36" r="21"></circle>
+            <g id="3.Icons/Filled/add2" fill="#FA5151">
+                <g id="icon21">
+                    <path d="M36,6 C52.5685425,6 66,19.4314575 66,36 C66,52.5685425 52.5685425,66 36,66 C19.4314575,66 6,52.5685425 6,36 C6,19.4314575 19.4314575,6 36,6 Z M38.25,21 L33.75,21 L33.75,33.75 L21,33.75 L21,38.25 L33.75,38.25 L33.75,51 L38.25,51 L38.25,38.25 L51,38.25 L51,33.75 L38.25,33.75 L38.25,21 Z" id="图标颜色"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

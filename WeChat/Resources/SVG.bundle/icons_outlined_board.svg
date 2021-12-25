@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons_outlined_board</title>
+    <g id="卡点2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons_outlined_board">
+            <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+            <path d="M21,3 C21.5522847,3 22,3.44771525 22,4 L22,15 C22,15.5522847 21.5522847,16 21,16 L15.937,16 L18.7990381,20.955127 L17.5,21.705127 L16.053,19.2 L7.945,19.2 L6.49903811,21.705127 L5.2,20.955127 L8.059,16 L3,16 C2.44771525,16 2,15.5522847 2,15 L2,4 C2,3.44771525 2.44771525,3 3,3 L21,3 Z M14.205,16 L9.792,16 L8.637,18 L15.36,18 L14.205,16 Z M20.8,4.2 L3.2,4.2 L3.2,14.8 L20.8,14.8 L20.8,4.2 Z" id="形状" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

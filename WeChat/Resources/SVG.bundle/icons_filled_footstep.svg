@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icons_filled_FootStep</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons_filled_FootStep" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ellipse id="椭圆形" fill="#000000" transform="translate(7.500000, 4.000000) rotate(-11.000000) translate(-7.500000, -4.000000) " cx="7.5" cy="4" rx="1.5" ry="2"></ellipse>
+        <ellipse id="椭圆形" fill="#000000" transform="translate(11.250000, 4.100000) rotate(-3.000000) translate(-11.250000, -4.100000) " cx="11.25" cy="4.1" rx="1.25" ry="1.6"></ellipse>
+        <ellipse id="椭圆形" fill="#000000" cx="14" cy="5" rx="1" ry="1.25"></ellipse>
+        <ellipse id="椭圆形" fill="#000000" cx="16.25" cy="6" rx="1" ry="1"></ellipse>
+        <path d="M10.3769531,15.4267578 C10.7540734,14.0650747 9.77979734,12.9094522 7.97021484,11.4190674 C6.16063235,9.92868255 6.79638672,7.21142578 9.39819336,6.60571289 C12,6 17.6546236,7.473737 17.8391113,12.2064209 C18.023599,16.9391048 14.7488871,22.4580511 11.4495697,21.9669348 C8.15025236,21.4758185 9.99983287,16.7884409 10.3769531,15.4267578 Z" id="路径-2" fill="#000000"></path>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons_outlined_ocr</title>
+    <g id="icons_outlined_ocr" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+            <path d="M4.2,16 L4.2,19.8 L8,19.8 L8,21 L4,21 C3.48716416,21 3.06449284,20.6139598 3.00672773,20.1166211 L3,20 L3,16 L4.2,16 Z M21,16 L21,20 C21,20.5522847 20.5522847,21 20,21 L16,21 L16,19.8 L19.8,19.8 L19.8,16 L21,16 Z M12.85,7 L16.3,16.5 L14.848,16.5 L14.011,14.2 L9.994,14.2 L9.157,16.5 L7.7,16.5 L11.16,7 L12.85,7 Z M12.003,8.68067766 L10.43,13 L13.574,13 L12.003,8.68067766 Z M8,3 L8,4.2 L4.2,4.2 L4.2,8 L3,8 L3,4 C3,3.44771525 3.44771525,3 4,3 L8,3 Z M20,3 C20.5128358,3 20.9355072,3.38604019 20.9932723,3.88337887 L21,4 L21,8 L19.8,8 L19.8,4.2 L16,4.2 L16,3 L20,3 Z" id="形状" fill-opacity="0.9" fill="#000000"></path>
+        </g>
+    </g>
+</svg>

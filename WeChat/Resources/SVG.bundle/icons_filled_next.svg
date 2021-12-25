@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>分段卡点备份</title>
+    <g id="分段卡点备份" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+            <g id="0.图标/面型/icons_filled_arrow" transform="translate(4.000000, 5.640000)" fill="#000000">
+                <path d="M10.5,-1.25233157e-13 L16.1568542,5.65685425 C16.5473785,6.04737854 16.5473785,6.68054352 16.1568542,7.07106781 L10.5,12.7279221 L9.08578644,11.3137085 L13.038,7.36 L-1.0658141e-14,7.36000013 L-1.0658141e-14,5.36000013 L13.032,5.36 L9.08578644,1.41421356 L10.5,-1.25233157e-13 Z" id="形状结合"></path>
+            </g>
+        </g>
+    </g>
+</svg>

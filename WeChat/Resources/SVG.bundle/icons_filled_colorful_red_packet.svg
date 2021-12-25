@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="20px" viewBox="0 0 15 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 25</title>
+    <defs>
+        <path d="M1.35449735,0 L13.6455026,0 C14.3935709,-1.46625403e-15 15,0.606429122 15,1.35449735 L15,18.6455026 C15,19.3935709 14.3935709,20 13.6455026,20 L1.35449735,20 C0.606429122,20 -3.52477273e-16,19.3935709 0,18.6455026 L0,1.35449735 C-3.13656542e-16,0.606429122 0.606429122,5.81507115e-16 1.35449735,0 Z" id="path-1"></path>
+        <path d="M0,0 L15,0 L15,7.53074653 C12.7089947,8.51024884 10.2089947,9 7.5,9 C4.79100529,9 2.29100529,8.51024884 0,7.53074653 L0,0 Z" id="path-3"></path>
+        <filter x="-13.3%" y="-11.1%" width="126.7%" height="144.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-5" cx="7.5" cy="8.5" r="2.5"></circle>
+        <filter x="-40.0%" y="-20.0%" width="180.0%" height="180.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="方案一--开播前指定群聊观众发红包" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-9.000000, -6.000000)">
+            <g id="编组-25" transform="translate(9.000000, 6.000000)">
+                <g id="编组-12">
+                    <g id="编组-9">
+                        <g id="编组-19" transform="translate(-0.000000, 0.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Rectangle" fill="#F35642" xlink:href="#path-1"></use>
+                            <g id="Rectangle" mask="url(#mask-2)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="#F25D4C" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <g id="Oval" mask="url(#mask-2)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use fill="#EBCD9A" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

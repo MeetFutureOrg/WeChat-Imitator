@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>icons_outlined_pad</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons_outlined_pad" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill="#000000" fill-rule="nonzero">
+            <path d="M5.2,3.2 L5.2,20.8 L18.8,20.8 L18.8,3.2 L5.2,3.2 Z M4,3 C4,2.44771525 4.44771525,2 5,2 L19,2 C19.5522847,2 20,2.44771525 20,3 L20,21 C20,21.5522847 19.5522847,22 19,22 L5,22 C4.44771525,22 4,21.5522847 4,21 L4,3 Z M12,20 C11.4477153,20 11,19.5522847 11,19 C11,18.4477153 11.4477153,18 12,18 C12.5522847,18 13,18.4477153 13,19 C13,19.5522847 12.5522847,20 12,20 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板</title>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18.6613413,11.1198781 L18.6613413,12.8598781 L8.47158513,12.8594149 L11.2931703,15.6809755 L10.0628045,16.9113413 L5.5514632,12.4 C5.32495911,12.1734959 5.32495911,11.8062602 5.5514632,11.5797561 L10.0628045,7.06841487 L11.2931703,8.29878067 L8.47158513,11.1194149 L18.6613413,11.1198781 Z" id="Combined-Shape" fill="#000000" transform="translate(12.021463, 11.989878) rotate(-90.000000) translate(-12.021463, -11.989878) "></path>
+    </g>
+</svg>

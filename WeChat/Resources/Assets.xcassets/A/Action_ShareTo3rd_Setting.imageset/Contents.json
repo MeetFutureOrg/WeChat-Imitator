@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Action_ShareTo3rd_Setting.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Action_ShareTo3rd_Setting@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Action_ShareTo3rd_Setting@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

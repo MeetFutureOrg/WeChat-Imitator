@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>play_press</title>
+    <desc>Created with Sketch.</desc>
+    <g id="play_press" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-2">
+            <circle id="椭圆形" fill-opacity="0.9" fill="#EDEDED" cx="22" cy="22" r="22"></circle>
+            <g id="3.Icons/Filled/play" transform="translate(8.800000, 8.800000)">
+                <g id="Group" stroke-width="1"></g>
+                <path d="M11.7148615,6.20914555 L19.9821105,11.2966834 C20.9228263,11.8755854 21.2161343,13.1074791 20.6372323,14.0481949 C20.4731456,14.3148357 20.2487514,14.5392299 19.9821105,14.7033166 L11.7148615,19.7908545 C10.7741457,20.3697565 9.54225206,20.0764485 8.96335003,19.1357327 C8.76937133,18.8205173 8.66666667,18.4576574 8.66666667,18.0875378 L8.66666667,7.91246218 C8.66666667,6.80789268 9.56209717,5.91246218 10.6666667,5.91246218 C11.0367862,5.91246218 11.3996461,6.01516685 11.7148615,6.20914555 Z" id="矩形" fill="#000000"></path>
+            </g>
+            <circle id="椭圆形" fill-opacity="0.9" fill="#000000" opacity="0.100000001" cx="22" cy="22" r="22"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons_filled_image</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="icons_filled_image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="镜像3备份" filter="url(#filter-1)">
+            <g id="编组" fill="#000000">
+                <path d="M22.4937642,3.5 L22.4937642,20.5 L13.8,20.5 C13.2477153,20.5 12.8,20.0522847 12.8,19.5 C12.8,19.4118628 12.811652,19.3241124 12.8346532,19.2390295 L16.8897321,4.23902951 C17.0076328,3.80290747 17.4033013,3.5 17.8550789,3.5 L22.4937642,3.5 Z M22.4932983,5.1 L18.3137642,5.1 L14.5827642,18.9 L22.4932983,18.9 L22.4932983,5.1 Z" id="路径-2" fill-rule="nonzero" transform="translate(17.646882, 12.000000) scale(-1, 1) translate(-17.646882, -12.000000) "></path>
+                <path d="M11,3.5 L11,20.5 L2.30623577,20.5 C1.75395102,20.5 1.30623577,20.0522847 1.30623577,19.5 C1.30623577,19.4118628 1.31788779,19.3241124 1.34088899,19.2390295 L5.3959679,4.23902951 C5.51386852,3.80290747 5.90953709,3.5 6.36131468,3.5 L11,3.5 L11,3.5 Z" id="路径-2备份"></path>
+            </g>
+        </g>
+    </g>
+</svg>

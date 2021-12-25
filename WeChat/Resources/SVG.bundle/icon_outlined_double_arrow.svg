@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>画板</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.58750873,12.4298916 L6.52684856,13.4905518 L0.747951526,7.71165473 C0.357826227,7.32152943 0.354365786,6.69247179 0.747951526,6.29888605 L6.52684856,0.519989014 L7.58750873,1.58064919 L2.16288753,7.00527039 L7.58750873,12.4298916 Z" id="path-1"></path>
+        <path d="M7.58750873,12.4298916 L6.52684856,13.4905518 L0.747951526,7.71165473 C0.357826227,7.32152943 0.354365786,6.69247179 0.747951526,6.29888605 L6.52684856,0.519989014 L7.58750873,1.58064919 L2.16288753,7.00527039 L7.58750873,12.4298916 Z" id="path-3"></path>
+    </defs>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+            <g id="3.Icons/Outlined/arrow备份" transform="translate(12.000000, 8.000000) rotate(-90.000000) translate(-12.000000, -8.000000) translate(8.000000, 1.000000)">
+                <g id="Group">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="图标颜色" fill="#576B95" transform="translate(4.020784, 7.005270) rotate(-180.000000) translate(-4.020784, -7.005270) " xlink:href="#path-1"></use>
+                </g>
+            </g>
+            <g id="3.Icons/Outlined/arrow备份-2" transform="translate(12.000000, 15.500000) rotate(-90.000000) translate(-12.000000, -15.500000) translate(8.000000, 8.500000)">
+                <g id="Group">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="图标颜色" fill="#576B95" transform="translate(4.020784, 7.005270) rotate(-180.000000) translate(-4.020784, -7.005270) " xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

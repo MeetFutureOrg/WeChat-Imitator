@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icons_filled_myminiprogram</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons_filled_myminiprogram" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="my_mini-program_icon">
+            <rect id="矩形" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="24" height="24"></rect>
+            <rect id="矩形备份-2" stroke="#FFC300" stroke-width="1.2" fill-opacity="0" fill="#FFFFFF" x="13.6" y="3.6" width="6.8" height="6.8" rx="3.4"></rect>
+            <polygon id="矩形" fill="#FFC300" transform="translate(17.747309, 17.743420) rotate(-45.000000) translate(-17.747309, -17.743420) " points="17.1473088 13.7434198 18.3473088 13.7434198 18.3473088 21.7434198 17.1473088 21.7434198"></polygon>
+            <rect id="矩形" fill="#FFC300" x="14" y="14" width="5" height="1.2"></rect>
+            <rect id="矩形" fill="#FFC300" x="14" y="14" width="1.2" height="5"></rect>
+            <rect id="矩形备份-3" stroke="#FFC300" stroke-width="1.2" fill-opacity="0" fill="#FFFFFF" x="3.6" y="3.6" width="6.8" height="6.8" rx="3.4"></rect>
+            <rect id="矩形备份" stroke="#FFC300" stroke-width="1.2" fill-opacity="0" fill="#FFFFFF" x="3.6" y="13.6" width="6.8" height="6.8" rx="3.4"></rect>
+        </g>
+    </g>
+</svg>

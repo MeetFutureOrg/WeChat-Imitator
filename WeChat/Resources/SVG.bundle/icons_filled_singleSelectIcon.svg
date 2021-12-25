@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>勾勾</title>
+    <desc>Created with Sketch.</desc>
+    <g id="勾勾" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-2">
+            <circle id="椭圆形" fill="#FFFFFF" cx="13" cy="12" r="8"></circle>
+            <path d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M17.3073048,7.84799995 L10.5881248,14.5671799 L7.26904511,11.2481003 L6,12.5171454 L9.88394115,16.4038958 C9.88386864,16.4040407 9.88390486,16.4040769 9.88394108,16.4041131 L9.97813108,16.4873213 C10.3703583,16.7924271 10.9375874,16.7648077 11.2980459,16.4042983 L11.2980459,16.4042983 L18.5823379,9.12303302 L17.3073048,7.84799995 Z" id="图标颜色" fill="#07C160"></path>
+        </g>
+    </g>
+</svg>

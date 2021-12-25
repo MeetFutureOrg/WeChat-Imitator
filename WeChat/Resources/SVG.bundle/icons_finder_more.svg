@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>更多地点icon</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="更多地点icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="72" height="72"></rect>
+        <g id="0.图标/面型/icons_filled_more备份" filter="url(#filter-1)">
+            <g id="编组-6">
+                <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="72" height="72"></rect>
+                <rect id="矩形" fill="#000000" x="18" y="18" width="36" height="6"></rect>
+                <rect id="矩形备份-2" fill="#000000" x="18" y="33" width="36" height="6"></rect>
+                <rect id="矩形备份-5" fill="#000000" x="18" y="48" width="36" height="6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

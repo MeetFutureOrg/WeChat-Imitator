@@ -68,6 +68,8 @@
 		A472E2462776C844007315AB /* DiscoveryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472E2452776C844007315AB /* DiscoveryViewModel.swift */; };
 		A472E2482776C84D007315AB /* ProfileViewModel.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472E2472776C84D007315AB /* ProfileViewModel.swift.swift */; };
 		A472E24A2776C854007315AB /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A472E2492776C854007315AB /* AccountViewModel.swift */; };
+		A48066972776FC770052E5BE /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A48066962776FC770052E5BE /* Expression.bundle */; };
+		A4806F0B2776FDDD0052E5BE /* SVG.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4806F0A2776FDDD0052E5BE /* SVG.bundle */; };
 		A4DB700F276B5B7900C8FC62 /* RouterDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB700E276B5B7900C8FC62 /* RouterDispatcher.swift */; };
 		A4DB7011276B5C0000C8FC62 /* RouterDispatchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB7010276B5C0000C8FC62 /* RouterDispatchType.swift */; };
 		B7C14DDDAF56C9B172F971BA /* Pods_WeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26A4EDA43AF6A6BE2D9B686 /* Pods_WeChat.framework */; };
@@ -198,6 +200,8 @@
 		A472E2452776C844007315AB /* DiscoveryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewModel.swift; sourceTree = "<group>"; };
 		A472E2472776C84D007315AB /* ProfileViewModel.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift.swift; sourceTree = "<group>"; };
 		A472E2492776C854007315AB /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		A48066962776FC770052E5BE /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
+		A4806F0A2776FDDD0052E5BE /* SVG.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVG.bundle; sourceTree = "<group>"; };
 		A4A34B6B2769FFCA0063DAC2 /* ChatSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSessionViewController.swift; sourceTree = "<group>"; };
 		A4A34B90276A00A20063DAC2 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		A4A34B93276A00BD0063DAC2 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
@@ -429,6 +433,8 @@
 		A41164A527682E3C00690C54 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A4806F0A2776FDDD0052E5BE /* SVG.bundle */,
+				A48066962776FC770052E5BE /* Expression.bundle */,
 				A41164932767456500690C54 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -745,6 +751,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A41164942767456500690C54 /* Assets.xcassets in Resources */,
+				A4806F0B2776FDDD0052E5BE /* SVG.bundle in Resources */,
+				A48066972776FC770052E5BE /* Expression.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

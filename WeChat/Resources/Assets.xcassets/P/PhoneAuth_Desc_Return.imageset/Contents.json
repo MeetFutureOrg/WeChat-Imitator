@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "PhoneAuth_Desc_Return.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "PhoneAuth_Desc_Return@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "PhoneAuth_Desc_Return@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

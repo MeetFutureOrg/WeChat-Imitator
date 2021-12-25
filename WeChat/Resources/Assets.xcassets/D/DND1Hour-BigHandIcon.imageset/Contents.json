@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "DND1Hour-BigHandIcon.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "DND1Hour-BigHandIcon@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "DND1Hour-BigHandIcon@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

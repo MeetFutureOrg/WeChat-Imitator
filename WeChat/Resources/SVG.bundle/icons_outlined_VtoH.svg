@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons_outlined_VtoH</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="icons_outlined_VtoH" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-3" filter="url(#filter-1)">
+            <g id="编组-9" transform="translate(13.147525, 9.300000) scale(-1, 1) rotate(-90.000000) translate(-13.147525, -9.300000) translate(4.207525, -1.447525)" fill="#FFFFFF">
+                <g id="编组-8" transform="translate(13.604174, 5.001337) scale(1, -1) rotate(-270.000000) translate(-13.604174, -5.001337) translate(8.602838, 0.725511)" fill-rule="nonzero">
+                    <path d="M3.80810794,4.60909577e-14 L3.808636,1.65049916 C6.65809793,1.9898705 9.07660973,4.05678352 9.7930311,6.93019269 C9.90446163,7.37711611 9.97177424,7.80363011 9.99424207,8.23081131 L10.0026732,8.55165164 L8.32267318,8.55165164 C8.32267318,8.15907158 8.27038821,7.76759566 8.16293428,7.33662147 C7.63458619,5.21753304 5.88902523,3.67447372 3.80901366,3.34631989 L3.80810794,5.25478401 L-8.69526673e-13,2.627392 L3.80810794,4.60909577e-14 Z" id="形状结合"></path>
+                </g>
+                <rect id="矩形" transform="translate(5.040000, 13.335050) rotate(-180.000000) translate(-5.040000, -13.335050) " x="0" y="5.17505012" width="10.08" height="16.32" rx="1.125"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

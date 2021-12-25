@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>左滑提醒</title>
+    <g id="左滑提醒" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="24" height="24"></rect>
+        <path d="M9.29289322,5.60289322 L10.7071068,7.01710678 L6.72125806,11.0008932 L21,11.001742 L21,13.001742 L6.72125806,13.0008932 L10.7071068,16.9863771 L9.29289322,18.4005907 L3.60115128,12.7088487 C3.24066731,12.3483648 3.21293778,11.7811337 3.51796267,11.3888425 L3.60115128,11.2946352 L9.29289322,5.60289322 Z" id="形状结合" fill-opacity="0.9" fill="#000000"></path>
+    </g>
+</svg>

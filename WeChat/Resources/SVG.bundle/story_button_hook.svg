@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>编组 3复制</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,12 C2.6862915,12 0,9.3137085 0,6 C0,2.6862915 2.6862915,0 6,0 C9.3137085,0 12,2.6862915 12,6 C12,9.3137085 9.3137085,12 6,12 Z" id="path-1"></path>
+    </defs>
+    <g id="-----默认编辑" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-3复制">
+            <g id="common_icons_miniprogram">
+                <g id="Oval-78">
+                    <use fill="#10AEFF" xlink:href="#path-1"></use>
+                    <use fill-opacity="0.1" fill="#000000" xlink:href="#path-1"></use>
+                </g>
+                <path d="M5.29406239,7.28358997 L8.65365239,3.92399998 L9.29116893,4.56151651 L5.71981354,8.13151839 C5.48545029,8.36578427 5.10555131,8.36570533 4.87128543,8.13134207 C4.87126369,8.13132033 4.87124196,8.13129858 4.87122023,8.13127683 L3,6.25857268 L3.63452255,5.62405013 L5.29406239,7.28358997 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icons_outlined_followloading</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons_outlined_followloading" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-6" fill="#FA5151">
+            <path d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z" id="Oval-78"></path>
+        </g>
+        <g id="编组-8备份" transform="translate(4.000000, 4.000000)">
+            <g id="1.iOS/3.Element/Loading/Green" transform="translate(0.666667, 0.666667)">
+                <g id="Group">
+                    <path d="M7.33333333,0 C11.3834215,0 14.6666667,3.28324517 14.6666667,7.33333333 C14.6666667,11.3834215 11.3834215,14.6666667 7.33333333,14.6666667 C3.28324517,14.6666667 0,11.3834215 0,7.33333333 C0,3.28324517 3.28324517,0 7.33333333,0 Z M7.33333333,1.22222222 C3.95825986,1.22222222 1.22222222,3.95825986 1.22222222,7.33333333 C1.22222222,10.7084068 3.95825986,13.4444444 7.33333333,13.4444444 C10.7084068,13.4444444 13.4444444,10.7084068 13.4444444,7.33333333 C13.4444444,3.95825986 10.7084068,1.22222222 7.33333333,1.22222222 Z" id="Combined-Shape" fill="" fill-rule="nonzero"></path>
+                    <circle id="Oval" fill="#FFFFFF" cx="7.33333333" cy="0.611111111" r="1"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

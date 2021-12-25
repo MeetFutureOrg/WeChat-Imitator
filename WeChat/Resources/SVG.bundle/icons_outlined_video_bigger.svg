@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>放大</title>
+    <desc>Created with Sketch.</desc>
+    <g id="放大" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(4.000000, 6.000000)" stroke="#FFFFFF" stroke-width="1.2">
+            <path d="M0,5 L0,0.24 C0,0.10745166 0.102334914,0 0.228571429,0 L15.7714286,0 C15.8976651,0 16,0.10745166 16,0.24 L16,11.76 C16,11.8925483 15.8976651,12 15.7714286,12 L7,12" id="路径"></path>
+            <path d="M4,12 L0.2,12 C0.08954305,12 0,11.9104569 0,11.8 L0,8" id="路径"></path>
+            <line x1="0" y1="12" x2="5.5" y2="6.5" id="路径-3"></line>
+        </g>
+    </g>
+</svg>

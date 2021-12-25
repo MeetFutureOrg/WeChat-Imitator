@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="24px" viewBox="0 0 32 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>画板 copy 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="画板-copy-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-copy">
+            <rect id="Rectangle" fill="#E3E3E3" x="0" y="0" width="32" height="24" rx="1"></rect>
+            <g id="分组" transform="translate(5.500000, 6.000000)" fill="#000000" fill-opacity="0.5">
+                <polygon id="Rectangle" transform="translate(17.500000, 6.500000) scale(-1, 1) translate(-17.500000, -6.500000) " points="15.5 5 19.5 5 17.5 8"></polygon>
+            </g>
+        </g>
+        <path d="M6,7 L12.2915094,7 L12.2915094,8.17226891 L7.33679245,8.17226891 L7.33679245,10.7941176 L11.9971698,10.7941176 L11.9971698,11.9663866 L7.33679245,11.9663866 L7.33679245,14.8277311 L12.5,14.8277311 L12.5,16 L6,16 L6,7 Z M16.5875,9.45454545 C18.1875,9.45454545 19,10.3174114 19,12.0677966 L19,16 L17.675,16 L17.675,12.1787365 C17.675,11.0939908 17.1625,10.5516179 16.1625,10.5516179 C15.7875,10.5516179 15.45,10.6748844 15.175,10.9460709 C14.875,11.2419106 14.6875,11.6486903 14.6375,12.1664099 L14.6375,16 L13.3125,16 L13.3125,9.62711864 L14.6375,9.62711864 L14.6375,10.4160247 C14.8875,10.0955316 15.175,9.86132512 15.5,9.70107858 C15.825,9.52850539 16.1875,9.45454545 16.5875,9.45454545 Z" id="En" fill-opacity="0.5" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

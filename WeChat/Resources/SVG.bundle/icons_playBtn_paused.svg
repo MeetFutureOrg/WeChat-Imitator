@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>PlayBtn_Black_Small备份</title>
+    <desc>Created with Sketch.</desc>
+    <g id="样式-20200907" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-2" transform="translate(-113.000000, -121.000000)">
+            <g id="编组-6" transform="translate(66.000000, 70.000000)">
+                <g id="编组-3" transform="translate(42.000000, 12.000000)">
+                    <g id="PlayBtn_Black_Small" transform="translate(5.000000, 39.000000)">
+                        <g id="编组-2备份">
+                            <circle id="椭圆形" stroke="#000000" stroke-width="0.8" cx="12" cy="12" r="11.6"></circle>
+                            <g id="0.图标/面型/icons_filled_play" transform="translate(5.400000, 4.800000)" fill="#000000" fill-opacity="0.9">
+                                <g id="Group">
+                                    <path d="M4.49768336,2.91296192 L11.0883447,6.67905411 C11.3760552,6.8434601 11.4760132,7.2099729 11.3116072,7.49768336 C11.2584536,7.59070213 11.1813635,7.6677923 11.0883447,7.72094589 L4.49768336,11.4870381 C4.2099729,11.6514441 3.8434601,11.551486 3.67905411,11.2637756 C3.62724919,11.1731169 3.6,11.0705084 3.6,10.9660922 L3.6,3.43390781 C3.6,3.10253696 3.86862915,2.83390781 4.2,2.83390781 C4.30441616,2.83390781 4.40702475,2.861157 4.49768336,2.91296192 Z" id="矩形"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

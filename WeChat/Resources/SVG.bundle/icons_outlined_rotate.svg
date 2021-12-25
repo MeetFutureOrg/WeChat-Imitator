@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g filter="url(#filter-1)" id="编组-3">
+            <g transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) ">
+                <g transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " id="编组-9" stroke="#FFFFFF">
+                    <g transform="translate(4.200000, -0.520000)">
+                        <g id="编组-8" transform="translate(13.600000, 5.840000) scale(1, -1) rotate(-270.000000) translate(-13.600000, -5.840000) translate(8.600000, 0.840000)">
+                            <polygon id="形状结合" stroke-width="0.675" fill="#FFFFFF" fill-rule="nonzero" transform="translate(1.984500, 2.563154) rotate(-270.000000) translate(-1.984500, -2.563154) " points="1.9845 4.00130859 3.969 1.125 -1.78146387e-12 1.125"></polygon>
+                            <path d="M8.31993765,9.34304365 C8.43654668,8.87535039 8.48383767,8.41116259 8.48383767,7.92224635 C8.48383767,5.01746164 6.48218613,2.58018769 3.78295304,1.91449449 C3.30674035,1.79704945 3.13871817,1.69813314 3.12778339,1.73894231" id="路径" stroke-width="1.575" transform="translate(5.805811, 5.536314) rotate(-14.000000) translate(-5.805811, -5.536314) "></path>
+                        </g>
+                        <g id="编组-12" transform="translate(5.862500, 13.991931) rotate(-180.000000) translate(-5.862500, -13.991931) translate(0.362500, 5.491931)" stroke-width="1.575">
+                            <rect id="矩形" x="0.7875" y="0.7875" width="9.225" height="14.985" rx="1.125"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

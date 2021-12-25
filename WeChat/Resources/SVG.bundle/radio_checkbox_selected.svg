@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Artboard Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9-Copy" transform="translate(2.000000, 2.000000)">
+            <g id="Group-8">
+                <path d="M19.4,10.1234568 C19.4,4.80840789 15.1915921,0.6 9.87654321,0.6 C4.77286382,0.6 0.6,4.84464638 0.6,10.1234568 C0.6,15.1915921 4.80840789,19.4 9.87654321,19.4 C15.1553536,19.4 19.4,15.2271362 19.4,10.1234568 Z" id="Fill-3" stroke="#FA5151" stroke-width="1.2"></path>
+                <g id="Element-/-Checkbox-/-Cell-On" transform="translate(4.000000, 4.000000)" fill="#FA5151">
+                    <path d="M12,6.07407407 C12,2.68622222 9.31377778,0 5.92592593,0 C2.68622222,0 0,2.68622222 0,6.07407407 C0,9.31377778 2.68622222,12 5.92592593,12 C9.31377778,12 12,9.31377778 12,6.07407407 Z" id="Fill-3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

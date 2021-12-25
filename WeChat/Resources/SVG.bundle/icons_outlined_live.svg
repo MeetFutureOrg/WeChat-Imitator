@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>live_icon</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="预告生成页改造备份" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="live_icon" transform="translate(0.000000, -2.000000)" filter="url(#filter-1)">
+            <g transform="translate(0.000000, 2.000000)">
+                <path d="M8,1.93333333 C9.67526374,1.93333333 11.1919304,2.61236813 12.2897811,3.71021886 C13.3876319,4.80806959 14.0666667,6.32473626 14.0666667,8 C14.0666667,9.67526374 13.3876319,11.1919304 12.2897811,12.2897811 C11.1919304,13.3876319 9.67526374,14.0666667 8,14.0666667 C6.32473626,14.0666667 4.80806959,13.3876319 3.71021886,12.2897811 C2.61236813,11.1919304 1.93333333,9.67526374 1.93333333,8 C1.93333333,6.32473626 2.61236813,4.80806959 3.71021886,3.71021886 C4.80806959,2.61236813 6.32473626,1.93333333 8,1.93333333 Z" id="路径" stroke="#FF6146" stroke-width="1.2" fill-rule="nonzero"></path>
+                <circle id="椭圆形备份-8" stroke="#FF6146" stroke-width="1.2" cx="8" cy="8" r="3.06666667"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

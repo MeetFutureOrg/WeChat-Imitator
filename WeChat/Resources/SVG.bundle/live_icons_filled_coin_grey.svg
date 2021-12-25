@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons_filled_coin_grey</title>
+    <g id="icons_filled_coin_grey" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="金币">
+            <g>
+                <circle id="Oval" fill="#FFFFFF" opacity="0.5" cx="6" cy="6" r="5.33333333"></circle>
+                <circle id="Oval" fill="#000000" opacity="0.3" cx="6" cy="6" r="3.86666667"></circle>
+                <path d="M5.10144287,7.25277778 L5.15865969,7.25277778 L5.91448911,4.94722222 L5.8582921,4.94722222 L5.10144287,7.25277778 Z M6.08551089,4.94722222 L6.84134031,7.25277778 L6.89720292,7.25277778 L6.1415807,4.94722222 L6.08551089,4.94722222 Z M7.08965954,7.25277778 L7.13541023,7.25277778 L7.99913322,4.94722222 L7.95426865,4.94722222 L7.08965954,7.25277778 Z M4.90424304,7.25277778 L4.00086678,4.94722222 L4.86458977,7.25277778 L4.90424304,7.25277778 Z" id="形状结合" stroke="#FFFFFF" stroke-width="0.694444444" fill="#FFFFFF" opacity="0.5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

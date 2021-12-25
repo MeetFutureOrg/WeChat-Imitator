@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>weidou_line</title>
+    <desc>Created with Sketch.</desc>
+    <g id="weidou_line" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <polygon id="Fill-1" points="0 24 23.999 24 23.999 0 0 0"></polygon>
+            <path d="M10.0884,10.7079 C10.0884,10.7079 13.0574,8.9209 13.3214,5.4159 C13.3924,4.4879 13.0904,3.0409 12.6794,2.6249 C12.4344,2.3759 12.0134,2.5209 11.9804,2.8689 C11.9244,3.4389 11.7124,4.5189 11.1574,5.2589 C10.7114,5.8529 9.7674,6.5379 9.4294,6.7719 C8.6154,7.2499 7.8304,7.8489 7.1104,8.5689 C3.5844,12.0949 2.9154,17.1419 5.6154,19.8429 C8.3164,22.5429 13.3634,21.8739 16.8894,18.3479 C20.4154,14.8219 21.0844,9.7739 18.3844,7.0739 C17.4384,6.1279 16.0394,5.5629 14.9954,5.4459 C13.9514,5.3299 13.3554,5.4159 13.3554,5.4159" id="Stroke-4" stroke="#000000" stroke-width="1.2"></path>
+        </g>
+    </g>
+</svg>

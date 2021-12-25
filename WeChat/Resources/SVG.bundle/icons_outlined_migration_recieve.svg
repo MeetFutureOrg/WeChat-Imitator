@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>icons_outlined_photowall</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons_outlined_photowall" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon34" fill="#000000" fill-rule="nonzero">
+            <path d="M16,18 L16,21 C16,21.5522847 15.5522847,22 15,22 L5,22 C4.44771525,22 4,21.5522847 4,21 L4,7 C4,6.44771525 4.44771525,6 5,6 L8,6 L8,3 C8,2.44771525 8.44771525,2 9,2 L19,2 C19.5522847,2 20,2.44771525 20,3 L20,17 C20,17.5522847 19.5522847,18 19,18 L16,18 Z M16,16.8 L18.8,16.8 L18.8,3.2 L9.2,3.2 L9.2,6 L15,6 C15.5522847,6 16,6.44771525 16,7 L16,16.8 Z M14.8,20.8 L14.8,7.2 L5.2,7.2 L5.2,20.8 L14.8,20.8 Z M10,20 C9.44771525,20 9,19.5522847 9,19 C9,18.4477153 9.44771525,18 10,18 C10.5522847,18 11,18.4477153 11,19 C11,19.5522847 10.5522847,20 10,20 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

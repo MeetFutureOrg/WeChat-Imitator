@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icons/Outlined/Top</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons/Outlined/Top" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.9">
+        <g id="编组" transform="translate(3.000000, 4.000000)" fill="#000000">
+            <rect id="矩形" x="0" y="2.2759572e-14" width="16" height="1.2"></rect>
+            <rect id="矩形复制" x="0" y="7" width="9" height="1.2"></rect>
+            <rect id="矩形复制-2" x="0" y="14" width="11" height="1.2"></rect>
+            <path d="M15.1355279,6.88283672 L15.1355279,16.1213203 L13.9355278,16.1213203 L13.9355278,6.88284888 L11.8485282,8.96984851 L11,8.12132034 L13.8284271,5.29289322 C14.2189514,4.90236893 14.8521164,4.90236893 15.2426407,5.29289322 L18.0710678,8.12132034 L17.2225396,8.96984851 L15.1355279,6.88283672 Z" id="Path复制"></path>
+        </g>
+    </g>
+</svg>

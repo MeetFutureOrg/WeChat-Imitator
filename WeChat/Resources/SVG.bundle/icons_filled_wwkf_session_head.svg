@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 3</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-3">
+            <rect id="矩形" fill="#1485EE" x="0" y="0" width="144" height="144" rx="12"></rect>
+            <g id="common_icons_chats" transform="translate(24.000000, 24.000000)" fill="#FFFFFF">
+                <path d="M48,80 C70.09139,80 88,64.7776815 88,46 C88,27.2223185 70.09139,12 48,12 C25.90861,12 8,27.2223185 8,46 C8,56.1456177 13.2279922,65.2533319 21.519025,71.4829337 L20.3106362,81.878455 C20.1830984,82.9756368 20.9691501,83.9684682 22.0663319,84.0960061 C22.4415311,84.1396197 22.8214109,84.0760911 23.1620042,83.912773 L35.0938167,78.1913431 C39.1429223,79.3638936 43.4840667,80 48,80 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

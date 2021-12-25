@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>视频号（曲线）</title>
+    <desc>Created with Sketch.</desc>
+    <g id="视频号（曲线）" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+            <g id="编组-2" transform="translate(1.500000, 1.500000)">
+                <polygon id="路径-6" stroke="#FA9D3B" stroke-width="1.20272727" stroke-linejoin="round" points="0 10.5 10.5 10.5 5.25 5.25"></polygon>
+                <polygon id="路径-3" stroke="#10AEFF" stroke-width="1.20272727" stroke-linejoin="round" points="10.5 10.5 21 10.5 15.75 15.75"></polygon>
+                <path d="" id="路径-8" stroke="#979797" stroke-width="1.20272727"></path>
+                <polygon id="路径-2" stroke="#FA5151" stroke-width="1.20272727" stroke-linejoin="round" points="10.5 0 10.5039602 10.5 15.7499843 5.25"></polygon>
+                <polygon id="路径-4" stroke="#07C160" stroke-width="1.20272727" stroke-linejoin="round" points="10.5 10.5 10.5 21 5.25 15.75"></polygon>
+                <polygon id="路径-7" stroke="#FA9D3B" stroke-width="1.20272727" stroke-linejoin="round" points="10.5 10.5 10.5 5.25 5.25 5.25"></polygon>
+                <polyline id="路径" stroke="#FA5151" stroke-width="1.20272727" stroke-linejoin="round" points="15.75 5.25 15.75 10.5 10.5 10.5"></polyline>
+                <polyline id="路径-9" stroke="#10AEFF" stroke-width="1.20272727" stroke-linejoin="round" points="10.5 10.5 10.5 15.75 15.75 15.75"></polyline>
+                <polyline id="路径-5" stroke="#07C160" stroke-width="1.20272727" stroke-linejoin="round" points="10.5 10.5 5.25 10.5 5.25 15.75"></polyline>
+                <polygon id="路径-10" fill="#07C160" points="9.9 9.9 10.5015717 10.5 9.9 11.1 9.79258728 10.5"></polygon>
+                <polygon id="矩形" fill="#FA9D3B" points="9.9 9.9 10.4960531 9.79272461 11.1 9.9 10.5015717 10.5"></polygon>
+                <polygon id="矩形" fill="#10AEFF" points="10.5009308 10.5 11.1 11.1 10.5 11.2136688 9.9 11.1"></polygon>
+                <polygon id="路径-11" fill="#FA5151" points="11.1 9.9 11.1999207 10.5 11.1 11.1 10.5015717 10.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+{
+  "images" : [
+    {
+      "filename" : "BootImage~phone.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "BootImage~phone@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "BootImage~phone@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "BootImage~pad@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

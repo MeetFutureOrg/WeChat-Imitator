@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>3.Icons/Outlined/cloud</title>
+    <desc>Created with Sketch.</desc>
+    <g id="3.Icons/Outlined/cloud" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Filled/could-Copy">
+            <g id="Group"></g>
+            <g id="yun-2" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) translate(1.500000, 5.000000)" stroke="#000000">
+                <path d="M10.5,0 C7.96146056,0 5.77489383,1.40075683 4.72510617,3.50084758 C2.01237842,3.8494358 0,6.03729859 0,8.75049228 C0,11.6373123 2.36287845,14 5.2500685,14 L16.6241952,14 C19.0748527,14 21,12.0743232 21,9.62376073 C21,7.34959847 19.1626319,5.42464085 16.9747294,5.2496447 C16.361988,2.27494992 13.7370394,0 10.5,0 Z" id="Fill-1" stroke-width="1.2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="104px" viewBox="0 0 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>banner/connect_pc</title>
+    <g id="banner/connect_pc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" stroke="#000000" stroke-width="0.8" x="4.4" y="16.4" width="95.2" height="62.2" rx="4"></rect>
+        <rect id="矩形" stroke="#000000" stroke-width="0.8" x="8.4" y="20.4" width="87.2" height="54.2" rx="1"></rect>
+        <path d="M47.3953488,79 L47.3898753,82.4495104 C47.3868853,84.3338747 45.9616599,85.9118648 44.0873253,86.1060487 L34.8256387,87.0655737 C34.3564993,87.1141772 34,87.5095185 34,87.9811689 L34,88.0795043 C34,88.58788 34.41212,89 34.9204957,89 L69.0795043,89 C69.58788,89 70,88.58788 70,88.0795043 L70,87.9811689 C70,87.5095185 69.6435007,87.1141772 69.1743613,87.0655737 L59.9232114,86.1071404 C58.0444305,85.9124958 56.6176643,84.3277517 56.6206614,82.4389173 L56.6261181,79 L56.6261181,79" id="路径-3" stroke="#000000" stroke-width="0.8"></path>
+    </g>
+</svg>

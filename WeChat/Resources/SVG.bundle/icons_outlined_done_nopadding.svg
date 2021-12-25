@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>0.图标/线型/icons_outlined_done2</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0.900000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="交互稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.9">
+        <g id="0.图标/线型/icons_outlined_done2" transform="translate(-3.000000, -3.000000)" filter="url(#filter-1)">
+            <g id="common_icons_miniprogram" fill="#000000">
+                <path d="M18,3 C26.2842712,3 33,9.71572875 33,18 C33,26.2842712 26.2842712,33 18,33 C9.71572875,33 3,26.2842712 3,18 C3,9.71572875 9.71572875,3 18,3 Z M18,4.8 C10.7098413,4.8 4.8,10.7098413 4.8,18 C4.8,25.2901587 10.7098413,31.2 18,31.2 C25.2901587,31.2 31.2,25.2901587 31.2,18 C31.2,10.7098413 25.2901587,4.8 18,4.8 Z M24.9551301,13.125 L26.2279223,14.3977923 L17.18545,23.4402646 C16.6647509,23.9609636 15.820531,23.9609636 15.2998319,23.4402646 L10.5,18.6404327 L11.7727923,17.3676404 L16.2426409,21.8374891 L24.9551301,13.125 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
