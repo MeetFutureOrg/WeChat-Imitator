@@ -11,6 +11,8 @@ import RxSwift
 import RxCocoa
 
 class TableViewController: ASDKViewController<ASTableNode>, ViewControllerType {
+    
+    // ViewControllerType implements start
     var isLoading: BehaviorRelay<Bool> = .init(value: false)
     
     var error: PublishSubject<NetworkError> = PublishSubject()
@@ -47,16 +49,23 @@ class TableViewController: ASDKViewController<ASTableNode>, ViewControllerType {
         return view
     }()
     
-    func setupSubviews() {}
+    func setupSubnodes() {
+        navigationItem.backBarButtonItem = backBarButton
+        node.view.separatorStyle = .none
+        updateSubnodes()
+    }
+    
+    func updateSubnodes() {}
     
     func bindViewModel() {
         viewModel?.headerLoading.asObservable().bind(to: isHeaderLoading).disposed(by: rx.disposeBag)
         viewModel?.footerLoading.asObservable().bind(to: isFooterLoading).disposed(by: rx.disposeBag)
     }
     
-    func updateSubviews() {}
-    
-    var inset: CGFloat = Configuration.Dimensions.inset
+    var inset: CGFloat {
+        return Configuration.Dimensions.inset
+    }
+    // ViewControllerType implements end
     
     let headerRefreshTrigger = PublishSubject<Void>()
     let footerRefreshTrigger = PublishSubject<Void>()
@@ -68,12 +77,6 @@ class TableViewController: ASDKViewController<ASTableNode>, ViewControllerType {
     var navigator: Navigator
     
     var clearsSelectionOnViewWillAppear = true
-    
-    lazy var tableView: ASTableView = {
-        let view = node.view
-        view.rx.setDelegate(self).disposed(by: rx.disposeBag)
-        return view
-    }()
 
     init(viewModel: ViewModel?, navigator: Navigator, style: UITableView.Style = .plain) {
         self.viewModel = viewModel
@@ -89,26 +92,116 @@ class TableViewController: ASDKViewController<ASTableNode>, ViewControllerType {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupSubnodes()
+        bindViewModel()
+
+        closeBarButton.rx.tap.asObservable().subscribe(onNext: { [weak self] () in
+            self?.navigator.dismiss(sender: self)
+        }).disposed(by: rx.disposeBag)
+
+        NotificationCenter.default
+            .rx.notification(UIDevice.orientationDidChangeNotification).mapToVoid()
+            .bind(to: orientationEvent).disposed(by: rx.disposeBag)
+
+        orientationEvent.subscribe { [weak self] _ in
+            self?.orientationChanged()
+        }.disposed(by: rx.disposeBag)
+
+        NotificationCenter.default
+            .rx.notification(UIApplication.didBecomeActiveNotification)
+            .subscribe { [weak self] _ in
+                self?.didBecomeActive()
+            }.disposed(by: rx.disposeBag)
+
+        NotificationCenter.default
+            .rx.notification(UIAccessibility.reduceMotionStatusDidChangeNotification)
+            .subscribe(onNext: { _ in
+                debugPrint("Motion Status changed")
+            }).disposed(by: rx.disposeBag)
+
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleOneFingerSwipe(swipeRecognizer:)))
+        swipeGesture.numberOfTouchesRequired = 1
+        self.view.addGestureRecognizer(swipeGesture)
+
+        let twoSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleTwoFingerSwipe(swipeRecognizer:)))
+        twoSwipeGesture.numberOfTouchesRequired = 2
+        self.view.addGestureRecognizer(twoSwipeGesture)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if automaticallyAdjustsLeftBarButtonItem {
+            adjustLeftBarButtonItem()
+        }
         if clearsSelectionOnViewWillAppear {
             deselectSelectedRow()
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        updateSubnodes()
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            motionShakeEvent.onNext(())
+        }
+    }
+
+    func orientationChanged() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.updateSubnodes()
+        }
+    }
+
+    func didBecomeActive() {
+        self.updateSubnodes()
+    }
+    
+    func adjustLeftBarButtonItem() {
+        if self.navigationController?.viewControllers.count ?? 0 > 1 { // Pushed
+            self.navigationItem.leftBarButtonItem = nil
+        } else if self.presentingViewController != nil { // presented
+            self.navigationItem.leftBarButtonItem = closeBarButton
+        }
+    }
     
     func deselectSelectedRow() {
         if let selectedIndexPaths = node.indexPathsForSelectedRows {
-            selectedIndexPaths.forEach({ (indexPath) in
-                tableView.deselectRow(at: indexPath, animated: false)
-            })
+            selectedIndexPaths.forEach { indexPath in
+                node.view.deselectRow(at: indexPath, animated: false)
+            }
+        }
+    }
+    
+    @objc
+    func closeAction(sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension TableViewController {
+
+    @objc
+    func handleOneFingerSwipe(swipeRecognizer: UISwipeGestureRecognizer) {
+        if swipeRecognizer.state == .recognized {
+            // Do somethings
+        }
+    }
+
+    @objc
+    func handleTwoFingerSwipe(swipeRecognizer: UISwipeGestureRecognizer) {
+        if swipeRecognizer.state == .recognized {
+            // Do somethings
         }
     }
 }
 
-
 extension TableViewController: UIScrollViewDelegate {
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {}
 }
+
+extension TableViewController: ASTableDataSource {}
+
+extension TableViewController: ASTableDelegate {}

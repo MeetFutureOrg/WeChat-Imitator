@@ -9,7 +9,7 @@
 import AsyncDisplayKit
 import SwifterSwift
 
-class ChatSessionViewController: ViewController {
+class ChatSessionViewController: TableViewController {
 
     let tableNode = ASTableNode(style: .insetGrouped)
     
@@ -28,7 +28,7 @@ class ChatSessionViewController: ViewController {
     }
 }
 
-extension ChatSessionViewController: ASTableDataSource {
+extension ChatSessionViewController {
     func numberOfSections(in tableNode: ASTableNode) -> Int {
         return 3
     }
@@ -39,19 +39,19 @@ extension ChatSessionViewController: ASTableDataSource {
     
     func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
         return {
-            let cell = CellNode()
+            let cell = ChatSessionCellNode()
             return cell
         }
     }
 }
 
-extension ChatSessionViewController: ASTableDelegate {
+extension ChatSessionViewController {
     func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
         navigationController?.pushViewController(ChatRoomViewController(viewModel: viewModel, navigator: navigator), animated: true)
     }
 }
 
-class CellNode: ASCellNode {
+class ChatSessionCellNode: ASCellNode {
     
     let titleNode = ASTextNode()
     let subtitleNode = ASTextNode()

@@ -33,11 +33,11 @@ protocol ViewControllerType: UIViewController {
     
     var closeBarButton: BarButtonItem { get }
 
-    func setupSubviews()
+    func setupSubnodes()
+    
+    func updateSubnodes()
 
     func bindViewModel()
 
-    func updateSubviews()
-    
     var inset: CGFloat { get }
 }

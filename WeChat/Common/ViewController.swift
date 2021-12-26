@@ -13,6 +13,7 @@ import SnapKit
 
 class ViewController: ASDKViewController<ASDisplayNode>, ViewControllerType {
     
+    // ViewControllerType implements start
     var viewModel: ViewModel?
     var navigator: Navigator
 
@@ -26,12 +27,10 @@ class ViewController: ASDKViewController<ASDisplayNode>, ViewControllerType {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     var isLoading = BehaviorRelay(value: false)
     var error = PublishSubject<NetworkError>()
 
     var automaticallyAdjustsLeftBarButtonItem = true
-    
     
     var navigationTitle = "" {
         didSet {
@@ -66,12 +65,37 @@ class ViewController: ASDKViewController<ASDisplayNode>, ViewControllerType {
                                  action: nil)
         return view
     }()
+    
+    func setupSubnodes() {
+        navigationItem.backBarButtonItem = backBarButton
+        updateSubnodes()
+    }
+    
+    func updateSubnodes() {}
+
+    func bindViewModel() {
+        viewModel?.loading.asObservable().bind(to: isLoading).disposed(by: rx.disposeBag)
+        viewModel?.parsedError.asObservable().bind(to: error).disposed(by: rx.disposeBag)
+
+        languageChanged.subscribe(onNext: { _ in
+            // TODO: - do something
+        }).disposed(by: rx.disposeBag)
+
+        isLoading.subscribe(onNext: { _ in
+            // TODO: - do something
+        }).disposed(by: rx.disposeBag)
+    }
+    
+    var inset: CGFloat {
+        return Configuration.Dimensions.inset
+    }
+    // ViewControllerType implements end
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setupSubviews()
+        setupSubnodes()
         bindViewModel()
 
         closeBarButton.rx.tap.asObservable().subscribe(onNext: { [weak self] () in
@@ -82,19 +106,19 @@ class ViewController: ASDKViewController<ASDisplayNode>, ViewControllerType {
             .rx.notification(UIDevice.orientationDidChangeNotification).mapToVoid()
             .bind(to: orientationEvent).disposed(by: rx.disposeBag)
 
-        orientationEvent.subscribe { [weak self] (event) in
+        orientationEvent.subscribe { [weak self] _ in
             self?.orientationChanged()
         }.disposed(by: rx.disposeBag)
 
         NotificationCenter.default
             .rx.notification(UIApplication.didBecomeActiveNotification)
-            .subscribe { [weak self] (event) in
+            .subscribe { [weak self] _ in
                 self?.didBecomeActive()
             }.disposed(by: rx.disposeBag)
 
         NotificationCenter.default
             .rx.notification(UIAccessibility.reduceMotionStatusDidChangeNotification)
-            .subscribe(onNext: { (event) in
+            .subscribe(onNext: { _ in
                 debugPrint("Motion Status changed")
             }).disposed(by: rx.disposeBag)
 
@@ -113,33 +137,13 @@ class ViewController: ASDKViewController<ASDisplayNode>, ViewControllerType {
         if automaticallyAdjustsLeftBarButtonItem {
             adjustLeftBarButtonItem()
         }
-        updateSubviews()
+        updateSubnodes()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        updateSubviews()
+        updateSubnodes()
     }
-
-    func setupSubviews() {
-        navigationItem.backBarButtonItem = backBarButton
-        updateSubviews()
-    }
-
-    func bindViewModel() {
-        viewModel?.loading.asObservable().bind(to: isLoading).disposed(by: rx.disposeBag)
-        viewModel?.parsedError.asObservable().bind(to: error).disposed(by: rx.disposeBag)
-
-        languageChanged.subscribe(onNext: { _ in
-            // TODO: -
-        }).disposed(by: rx.disposeBag)
-
-        isLoading.subscribe(onNext: { _ in
-            // TODO: -
-        }).disposed(by: rx.disposeBag)
-    }
-
-    func updateSubviews() {}
 
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
@@ -149,15 +153,14 @@ class ViewController: ASDKViewController<ASDisplayNode>, ViewControllerType {
 
     func orientationChanged() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            self.updateSubviews()
+            self.updateSubnodes()
         }
     }
 
     func didBecomeActive() {
-        self.updateSubviews()
+        self.updateSubnodes()
     }
 
-    // MARK: Adjusting Navigation Item
     func adjustLeftBarButtonItem() {
         if self.navigationController?.viewControllers.count ?? 0 > 1 { // Pushed
             self.navigationItem.leftBarButtonItem = nil
@@ -166,24 +169,23 @@ class ViewController: ASDKViewController<ASDisplayNode>, ViewControllerType {
         }
     }
 
-    @objc func closeAction(sender: AnyObject) {
+    @objc
+    func closeAction(sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
     }
 }
 
 extension ViewController {
 
-    var inset: CGFloat {
-        return Configuration.Dimensions.inset
-    }
-
-    @objc func handleOneFingerSwipe(swipeRecognizer: UISwipeGestureRecognizer) {
+    @objc
+    func handleOneFingerSwipe(swipeRecognizer: UISwipeGestureRecognizer) {
         if swipeRecognizer.state == .recognized {
             // Do somethings
         }
     }
 
-    @objc func handleTwoFingerSwipe(swipeRecognizer: UISwipeGestureRecognizer) {
+    @objc
+    func handleTwoFingerSwipe(swipeRecognizer: UISwipeGestureRecognizer) {
         if swipeRecognizer.state == .recognized {
             // Do somethings
         }

@@ -83,8 +83,8 @@ type_name:
     warning: 2
     error: 2
   max_length:
-    warning: 40
-    error: 50
+    warning: 50
+    error: 60
   allowed_symbols: ["_"] 
 
 function_parameter_count:

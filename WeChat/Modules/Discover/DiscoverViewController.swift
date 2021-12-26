@@ -8,7 +8,7 @@
 
 import AsyncDisplayKit
 
-class DiscoverViewController: ViewController {
+class DiscoverViewController: TableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

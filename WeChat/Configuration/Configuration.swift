@@ -18,6 +18,7 @@ struct Configuration {
         static let navigationBarHeight: CGFloat = 44
         
         static let cornerRadius: CGFloat = 5
+        static let separatorHeight: CGFloat = 1
         static let borderWidth: CGFloat = 1
         static let buttonHeight: CGFloat = 40
         static let textFieldHeight: CGFloat = 40
@@ -30,4 +31,8 @@ struct Configuration {
     }
 
     struct MMKVKeys {}
+    
+    struct Font {
+        static let titleFont = UIFont.systemFont(ofSize: 12)
+    }
 }
