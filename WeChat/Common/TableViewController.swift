@@ -19,7 +19,11 @@ class TableViewController: ASDKViewController<ASTableNode>, ViewControllerType {
     
     var automaticallyAdjustsLeftBarButtonItem: Bool = true
     
-    var navigationTitle: String = ""
+    var navigationTitle: String = "" {
+        didSet {
+            navigationItem.title = navigationTitle
+        }
+    }
     
     var languageChanged: BehaviorRelay<Void> = BehaviorRelay(value: ())
     

@@ -12,7 +12,6 @@ class ContactsViewController: TableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func setupSubnodes() {
@@ -29,7 +28,7 @@ class ContactsViewController: TableViewController {
         let input = ContactsViewModel.Input(trigger: rx.viewDidLoad,
                                             cancelSearchTrigger: searchBar.rx.cancelButtonClicked.asDriver(),
                                             keywordTrigger: searchBar.rx.text.orEmpty.asDriver(),
-                                            selections: node.rx.modelSelected(ContactCellViewModel.self).asDriver())
+                                            selection: node.rx.modelSelected(ContactCellViewModel.self).asDriver())
         let output = viewModel.transform(input: input)
 
         output.items.drive(node.rx.items(nodeType: ContactCellNode.self)) { _, viewModel in

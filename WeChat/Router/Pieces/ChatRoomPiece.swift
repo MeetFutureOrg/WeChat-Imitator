@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol ChatRoomPiece: Piece {
+protocol ChatRoomPiece: Piece {
 
     func chatRoom(session: ChatSession) -> UIViewController
 }

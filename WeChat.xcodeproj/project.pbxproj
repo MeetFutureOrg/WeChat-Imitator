@@ -32,7 +32,6 @@
 		A428FADF2774C33E00944E74 /* EmoticonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428FADE2774C33E00944E74 /* EmoticonViewController.swift */; };
 		A428FAE12774C36000944E74 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428FAE02774C36000944E74 /* Logger.swift */; };
 		A428FAE32774C37300944E74 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428FAE22774C37300944E74 /* SearchViewController.swift */; };
-		A428FAE42774C42C00944E74 /* ChatSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B3BA12769C49E0025B150 /* ChatSession.swift */; };
 		A428FAE52774C43000944E74 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B1DC1276865B7002456EC /* Response+ObjectMapper.swift */; };
 		A428FAE62774C43200944E74 /* Single+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B1DC32768661D002456EC /* Single+ObjectMapper.swift */; };
 		A428FAE72774C43500944E74 /* ObservableType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B1DC527686635002456EC /* ObservableType+ObjectMapper.swift */; };
@@ -71,6 +70,12 @@
 		A48066972776FC770052E5BE /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A48066962776FC770052E5BE /* Expression.bundle */; };
 		A4806F0B2776FDDD0052E5BE /* SVG.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4806F0A2776FDDD0052E5BE /* SVG.bundle */; };
 		A4AEACBB27784459002BEC48 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AEACBA27784459002BEC48 /* ContactsManager.swift */; };
+		A4AEACC027788872002BEC48 /* ChatSessionCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AEACBF27788872002BEC48 /* ChatSessionCellNode.swift */; };
+		A4AEACC2277888A1002BEC48 /* ChatSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AEACC1277888A1002BEC48 /* ChatSession.swift */; };
+		A4AEACC4277888E0002BEC48 /* ChatSessionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AEACC3277888E0002BEC48 /* ChatSessionCellViewModel.swift */; };
+		A4AEACC6277888ED002BEC48 /* ChatSessionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AEACC5277888ED002BEC48 /* ChatSessionsManager.swift */; };
+		A4AEACC927789C8C002BEC48 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AEACC827789C8C002BEC48 /* MockData.swift */; };
+		A4AEACCC27789D14002BEC48 /* mock_data.json in Resources */ = {isa = PBXBuildFile; fileRef = A4AEACCB27789D14002BEC48 /* mock_data.json */; };
 		A4C49FEC27770E3500CCDFA0 /* UIImage+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FEB27770E3500CCDFA0 /* UIImage+SVG.swift */; };
 		A4C49FEE27770F4500CCDFA0 /* SVGImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FED27770F4500CCDFA0 /* SVGImage+Extensions.swift */; };
 		A4C49FF02777123D00CCDFA0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C49FEF2777123D00CCDFA0 /* Colors.swift */; };
@@ -215,7 +220,6 @@
 		A43B3B882769BFC00025B150 /* MePiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MePiece.swift; sourceTree = "<group>"; };
 		A43B3B8A2769BFCC0025B150 /* ContactsPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsPiece.swift; sourceTree = "<group>"; };
 		A43B3B8C2769BFD90025B150 /* SearchPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPiece.swift; sourceTree = "<group>"; };
-		A43B3BA12769C49E0025B150 /* ChatSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSession.swift; sourceTree = "<group>"; };
 		A43B3BA42769C9AA0025B150 /* WeChatWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatWindow.swift; sourceTree = "<group>"; };
 		A46A37F9F9BF57B927E38909 /* Pods-Resource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resource.debug.xcconfig"; path = "Target Support Files/Pods-Resource/Pods-Resource.debug.xcconfig"; sourceTree = "<group>"; };
 		A472E23D2776C7C3007315AB /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
@@ -233,7 +237,13 @@
 		A4A34B96276A00E40063DAC2 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		A4A34B99276A013B0063DAC2 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		A4AEACBA27784459002BEC48 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
-		A4AEACBC2778455A002BEC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A4AEACBC2778455A002BEC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4AEACBF27788872002BEC48 /* ChatSessionCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSessionCellNode.swift; sourceTree = "<group>"; };
+		A4AEACC1277888A1002BEC48 /* ChatSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSession.swift; sourceTree = "<group>"; };
+		A4AEACC3277888E0002BEC48 /* ChatSessionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSessionCellViewModel.swift; sourceTree = "<group>"; };
+		A4AEACC5277888ED002BEC48 /* ChatSessionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSessionsManager.swift; sourceTree = "<group>"; };
+		A4AEACC827789C8C002BEC48 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		A4AEACCB27789D14002BEC48 /* mock_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_data.json; sourceTree = "<group>"; };
 		A4C49FEB27770E3500CCDFA0 /* UIImage+SVG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SVG.swift"; sourceTree = "<group>"; };
 		A4C49FED27770F4500CCDFA0 /* SVGImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVGImage+Extensions.swift"; sourceTree = "<group>"; };
 		A4C49FEF2777123D00CCDFA0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -427,13 +437,13 @@
 			path = Emoticon;
 			sourceTree = "<group>";
 		};
-		A40ADD5E27698B3000E2ECA7 /* ChatSession */ = {
+		A40ADD5E27698B3000E2ECA7 /* Chats */ = {
 			isa = PBXGroup;
 			children = (
-				A4A34B6B2769FFCA0063DAC2 /* ChatSessionViewController.swift */,
-				A472E23F2776C82C007315AB /* ChatSessionViewModel.swift */,
+				A4AEACC727788966002BEC48 /* ChatSession */,
+				A40ADCAA276989F500E2ECA7 /* ChatRoom */,
 			);
-			path = ChatSession;
+			path = Chats;
 			sourceTree = "<group>";
 		};
 		A411647E2767456300690C54 = {
@@ -457,7 +467,6 @@
 		A41164892767456300690C54 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
-				A4AEACBC2778455A002BEC48 /* Info.plist */,
 				A411649E27682D3F00690C54 /* Application */,
 				A411649F27682D4500690C54 /* Main */,
 				A40ADD1627698ABD00E2ECA7 /* Common */,
@@ -465,6 +474,7 @@
 				A4DB6FCB276AE70A00C8FC62 /* Networking */,
 				A4DB6FE2276AE78200C8FC62 /* Component */,
 				A43B3B4327699EA30025B150 /* Router */,
+				A4AEACCA27789CC4002BEC48 /* Mock */,
 				A40ADCF227698A7800E2ECA7 /* Utilities */,
 				A4C49FFB27772DD700CCDFA0 /* Configuration */,
 				A4DB700D276B5B5E00C8FC62 /* DispatchCenter */,
@@ -541,8 +551,7 @@
 		A428FAC82774C16000944E74 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A40ADD5E27698B3000E2ECA7 /* ChatSession */,
-				A40ADCAA276989F500E2ECA7 /* ChatRoom */,
+				A40ADD5E27698B3000E2ECA7 /* Chats */,
 				A40ADC74276989C100E2ECA7 /* Contacts */,
 				A40ADC86276989DD00E2ECA7 /* Discover */,
 				A40ADC98276989E900E2ECA7 /* Me */,
@@ -639,7 +648,6 @@
 			isa = PBXGroup;
 			children = (
 				A43B1DC02768658E002456EC /* Moya-ObjectMapper */,
-				A43B3BA12769C49E0025B150 /* ChatSession.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -650,6 +658,28 @@
 				A43B3BA42769C9AA0025B150 /* WeChatWindow.swift */,
 			);
 			path = Window;
+			sourceTree = "<group>";
+		};
+		A4AEACC727788966002BEC48 /* ChatSession */ = {
+			isa = PBXGroup;
+			children = (
+				A4A34B6B2769FFCA0063DAC2 /* ChatSessionViewController.swift */,
+				A472E23F2776C82C007315AB /* ChatSessionViewModel.swift */,
+				A4AEACBF27788872002BEC48 /* ChatSessionCellNode.swift */,
+				A4AEACC1277888A1002BEC48 /* ChatSession.swift */,
+				A4AEACC3277888E0002BEC48 /* ChatSessionCellViewModel.swift */,
+				A4AEACC5277888ED002BEC48 /* ChatSessionsManager.swift */,
+			);
+			path = ChatSession;
+			sourceTree = "<group>";
+		};
+		A4AEACCA27789CC4002BEC48 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				A4AEACCB27789D14002BEC48 /* mock_data.json */,
+				A4AEACC827789C8C002BEC48 /* MockData.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		A4C49FFB27772DD700CCDFA0 /* Configuration */ = {
@@ -673,6 +703,7 @@
 		A4DB6FBF276AE52F00C8FC62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4AEACBC2778455A002BEC48 /* Info.plist */,
 				A4C49FF127771A5F00CCDFA0 /* Launch Screen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -845,6 +876,7 @@
 				A4806F0B2776FDDD0052E5BE /* SVG.bundle in Resources */,
 				A4C49FF227771A5F00CCDFA0 /* Launch Screen.storyboard in Resources */,
 				A48066972776FC770052E5BE /* Expression.bundle in Resources */,
+				A4AEACCC27789D14002BEC48 /* mock_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,11 +958,13 @@
 				A4C4A01227776ECA00CCDFA0 /* Contact.swift in Sources */,
 				A428FAE72774C43500944E74 /* ObservableType+ObjectMapper.swift in Sources */,
 				A428FAD72774C2CB00944E74 /* WeChatCompatible.swift in Sources */,
+				A4AEACC4277888E0002BEC48 /* ChatSessionCellViewModel.swift in Sources */,
 				A428FAE52774C43000944E74 /* Response+ObjectMapper.swift in Sources */,
 				A472E23E2776C7C3007315AB /* UIViewController+Rx.swift in Sources */,
 				A428FAE32774C37300944E74 /* SearchViewController.swift in Sources */,
 				A428FAD02774C26C00944E74 /* WeChatWindow.swift in Sources */,
 				A428FAF32774C94D00944E74 /* ChatRoomPiece.swift in Sources */,
+				A4AEACC2277888A1002BEC48 /* ChatSession.swift in Sources */,
 				A4C49FFF2777309600CCDFA0 /* ViewControllerType.swift in Sources */,
 				A428FAE92774C44900944E74 /* AssetManager.swift in Sources */,
 				A428FAF02774C94300944E74 /* Module.swift in Sources */,
@@ -950,6 +984,7 @@
 				A439E3082774D21A00F9C7A3 /* ActivityIndicator.swift in Sources */,
 				A428FAEF2774C94000944E74 /* Dispatcher.swift in Sources */,
 				A411648B2767456300690C54 /* AppDelegate.swift in Sources */,
+				A4AEACC027788872002BEC48 /* ChatSessionCellNode.swift in Sources */,
 				A428FAF62774C95500944E74 /* MePiece.swift in Sources */,
 				A4C49FF627772C4C00CCDFA0 /* SearchBar.swift in Sources */,
 				A439E3122774D4B700F9C7A3 /* MainTabBarViewModel.swift in Sources */,
@@ -961,6 +996,7 @@
 				A4C4A0082777601700CCDFA0 /* ContactCellNode.swift in Sources */,
 				A439E3042774D17A00F9C7A3 /* ViewModel.swift in Sources */,
 				A428FAE12774C36000944E74 /* Logger.swift in Sources */,
+				A4AEACC927789C8C002BEC48 /* MockData.swift in Sources */,
 				A428FAF82774C95900944E74 /* SearchPiece.swift in Sources */,
 				A428FAD62774C2C900944E74 /* Then.swift in Sources */,
 				A4C49FEE27770F4500CCDFA0 /* SVGImage+Extensions.swift in Sources */,
@@ -991,13 +1027,13 @@
 				A4C4A00127775BCC00CCDFA0 /* Reusable.swift in Sources */,
 				A428FAD52774C2C700944E74 /* HasDisposeBag.swift in Sources */,
 				A4C4A00A2777608300CCDFA0 /* CellNode.swift in Sources */,
-				A428FAE42774C42C00944E74 /* ChatSession.swift in Sources */,
 				A428FAD82774C2F300944E74 /* ViewController.swift in Sources */,
 				A472E2462776C844007315AB /* DiscoverViewModel.swift in Sources */,
 				A4C49FF42777262900CCDFA0 /* TableViewController.swift in Sources */,
 				A428FAD22774C2A700944E74 /* Reachability+Rx.swift in Sources */,
 				A4C4A00C2777611300CCDFA0 /* BadgeNode.swift in Sources */,
 				A472E2422776C835007315AB /* ChatRoomViewModel.swift in Sources */,
+				A4AEACC6277888ED002BEC48 /* ChatSessionsManager.swift in Sources */,
 				A439E3062774D1BD00F9C7A3 /* WeChatProvider.swift in Sources */,
 				A428FACE2774C23700944E74 /* ChatRoomViewController.swift in Sources */,
 				A4C4A00627775C5900CCDFA0 /* UICollectionView+Reusable.swift in Sources */,
@@ -1133,7 +1169,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeChat/Info.plist;
+				INFOPLIST_FILE = "WeChat/Supporting Files/Info.plist";
 				INFOPLIST_KEY_NSContactsUsageDescription = "WeChat need contacts permission so you can invite your friends";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
@@ -1162,7 +1198,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeChat/Info.plist;
+				INFOPLIST_FILE = "WeChat/Supporting Files/Info.plist";
 				INFOPLIST_KEY_NSContactsUsageDescription = "WeChat need contacts permission so you can invite your friends";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";

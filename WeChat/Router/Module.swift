@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum Module: String, CaseIterable {
+enum Module: String, CaseIterable {
     case ChatSession
     case ChatRoom
     case Contacts
@@ -31,7 +31,7 @@ public enum Module: String, CaseIterable {
 
 extension Module {
 
-    public var hasPiece: Bool {
+    var hasPiece: Bool {
         switch self {
         case  .ChatSession: return true
         case  .ChatRoom: return true
@@ -58,31 +58,31 @@ extension Module {
 
 extension Router {
 
-    public static var ChatSession: ChatSessionPiece? {
+    static var ChatSession: ChatSessionPiece? {
         return Router.resolve(ChatSessionPiece.self)
     }
 
-    public static var ChatRoom: ChatRoomPiece? {
+    static var ChatRoom: ChatRoomPiece? {
         return Router.resolve(ChatRoomPiece.self)
     }
 
-    public static var Contacts: ContactsPiece? {
+    static var Contacts: ContactsPiece? {
         return Router.resolve(ContactsPiece.self)
     }
 
-    public static var Discover: DiscoverPiece? {
+    static var Discover: DiscoverPiece? {
         return Router.resolve(DiscoverPiece.self)
     }
 
-    public static var Me: MePiece? {
+    static var Me: MePiece? {
         return Router.resolve(MePiece.self)
     }
 
-    public static var Account: AccountPiece? {
+    static var Account: AccountPiece? {
         return Router.resolve(AccountPiece.self)
     }
 
-    public static var Search: SearchPiece? {
+    static var Search: SearchPiece? {
         return Router.resolve(SearchPiece.self)
     }
 }

@@ -6,7 +6,6 @@
 //  Copyright © 2021 TheBoring. All rights reserved.
 //
 
-import Foundation
 import ObjectMapper
 import Contacts
 

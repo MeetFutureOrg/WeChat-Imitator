@@ -32,7 +32,7 @@ class ViewController: ASDKViewController<ASDisplayNode>, ViewControllerType {
 
     var automaticallyAdjustsLeftBarButtonItem = true
     
-    var navigationTitle = "" {
+    var navigationTitle: String = "" {
         didSet {
             navigationItem.title = navigationTitle
         }
