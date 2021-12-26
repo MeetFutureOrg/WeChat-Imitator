@@ -8,31 +8,96 @@
 
 import UIKit
 
-struct Configuration {
+enum Configuration {
 
-    struct Network {}
+    enum Network {}
 
-    struct Dimensions {
-        static let inset: CGFloat = 8
-        static let insets: UIEdgeInsets = .init(top: inset, left: inset, bottom: inset, right: inset)
-        static let navigationBarHeight: CGFloat = 44
+    enum Dimensions: CGFloat {
+        case inset
+        case navigationBarHeight
+        case cornerRadius
+        case separatorHeight
+        case borderWidth
+        case buttonHeight
+        case textFieldHeight
+        case tableRowHeight
         
-        static let cornerRadius: CGFloat = 5
-        static let separatorHeight: CGFloat = 1
-        static let borderWidth: CGFloat = 1
-        static let buttonHeight: CGFloat = 40
-        static let textFieldHeight: CGFloat = 40
-        static let tableRowHeight: CGFloat = 44
+        var rawValue: CGFloat {
+            switch self {
+            case .inset: return 8
+            case .navigationBarHeight: return 44
+            case .cornerRadius: return 5
+            case .separatorHeight: return 1
+            case .borderWidth: return 1
+            case .buttonHeight: return 40
+            case .textFieldHeight: return 40
+            case .tableRowHeight: return 44
+            }
+        }
     }
-
-    struct Path {
-        static let Document = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-        static let Temporary = NSTemporaryDirectory()
-    }
-
-    struct MMKVKeys {}
     
-    struct Font {
-        static let titleFont = UIFont.systemFont(ofSize: 12)
+    static func dimension(_ constant: Dimensions) -> Dimensions.RawValue {
+        return constant.rawValue
+    }
+
+    enum PathPosition: String {
+        case document
+        case temporary
+        
+        var rawValue: String {
+            switch self {
+            case .document: return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+            case .temporary: return NSTemporaryDirectory()
+            }
+        }
+    }
+    
+    static func path(_ position: PathPosition) -> PathPosition.RawValue {
+        return position.rawValue
+    }
+
+    enum MMKVKeys: String {
+        case isFirstLaunch
+        
+        private var baseDomain: String {
+            "com.sunimp.wechat."
+        }
+        
+        var value: String {
+            baseDomain + rawValue
+        }
+    }
+    
+    static func mmkvKey(_ key: MMKVKeys) -> MMKVKeys.RawValue {
+        return key.value
+    }
+    
+    enum FontStyle: RawRepresentable {
+        
+        init?(rawValue: UIFont) {
+            self = .title
+        }
+        
+        typealias RawValue = UIFont
+        
+        case title
+        case tabBarItem
+        case tabBarItemBadge
+        
+        var rawValue: UIFont {
+            switch self {
+            case .title: return font(ofSize: 12.0)
+            case .tabBarItem: return font(ofSize: 9.0)
+            case .tabBarItemBadge: return font(ofSize: 9.0)
+            }
+        }
+        
+        fileprivate func font(ofSize size: CGFloat, weight: UIFont.Weight = .regular) -> UIFont {
+            UIFont.systemFont(ofSize: size, weight: weight)
+        }
+    }
+    
+    static func font(_ style: FontStyle) -> FontStyle.RawValue {
+        return style.rawValue
     }
 }

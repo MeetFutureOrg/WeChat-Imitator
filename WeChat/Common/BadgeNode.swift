@@ -37,7 +37,7 @@ class BadgeNode: ASDisplayNode {
         self.isDisplayMark = isDisplayMark
         guard let count = count else { return }
         let attributes: [NSAttributedString.Key: Any] = [
-            .font: Configuration.Font.titleFont,
+            .font: Configuration.font(.title),
             .foregroundColor: Colors.white
         ]
         textNode.attributedText = NSAttributedString(string: String(count), attributes: attributes)

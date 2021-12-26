@@ -86,8 +86,8 @@ class CellNode: ASCellNode {
         stack.children = [titleNode, spacer, disclosureNode]
         stack.style.preferredSize = CGSize(width: constrainedSize.max.width, height: 56)
         
-        separatorLineNode.style.preferredSize = CGSize(width: constrainedSize.max.width - 32, height: Configuration.Dimensions.separatorHeight)
-        separatorLineNode.style.layoutPosition = CGPoint(x: 16, y: 56 - Configuration.Dimensions.separatorHeight)
+        separatorLineNode.style.preferredSize = CGSize(width: constrainedSize.max.width - 32, height: Configuration.dimension(.separatorHeight))
+        separatorLineNode.style.layoutPosition = CGPoint(x: 16, y: 56 - Configuration.dimension(.separatorHeight))
         
         return ASAbsoluteLayoutSpec(children: [stack, separatorLineNode])
     }

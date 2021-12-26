@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwifterSwift
 
 let SharedApplication = Application.shared
 
@@ -53,6 +54,33 @@ final class Application {
 
         let appearance = UITabBarAppearance()
         appearance.configureWithDefaultBackground()
+        
+        appearance.stackedLayoutAppearance.normal.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -2)
+        appearance.stackedLayoutAppearance.normal.iconColor = Colors.black
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [
+            .foregroundColor: Colors.black,
+            .font: Configuration.font(.tabBarItem)
+        ]
+        appearance.stackedLayoutAppearance.normal.badgePositionAdjustment = UIOffset(horizontal: -2, vertical: -2)
+        appearance.stackedLayoutAppearance.normal.badgeBackgroundColor = Color.random
+        appearance.stackedLayoutAppearance.normal.badgeTextAttributes = [
+            .foregroundColor: Colors.white,
+            .font: Configuration.font(.tabBarItemBadge)
+        ]
+        
+        appearance.stackedLayoutAppearance.selected.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -2)
+        appearance.stackedLayoutAppearance.selected.iconColor = Colors.tintColor
+        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [
+            .foregroundColor: Colors.tintColor,
+            .font: Configuration.font(.tabBarItem)
+        ]
+        appearance.stackedLayoutAppearance.selected.badgePositionAdjustment = UIOffset(horizontal: -2, vertical: -2)
+        appearance.stackedLayoutAppearance.selected.badgeBackgroundColor = Color.random
+        appearance.stackedLayoutAppearance.selected.badgeTextAttributes = [
+            .foregroundColor: Colors.white,
+            .font: Configuration.font(.tabBarItemBadge)
+        ]
+        
         UITabBar.appearance().standardAppearance = appearance
         if #available(iOS 15.0, *) {
             UITabBar.appearance().scrollEdgeAppearance = appearance

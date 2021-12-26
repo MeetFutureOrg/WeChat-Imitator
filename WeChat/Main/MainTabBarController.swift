@@ -21,7 +21,7 @@ enum MainTabBarItem: String, CaseIterable {
         case .chats:
             return "微信"
         case .contacts:
-            return "联系人"
+            return "通讯录"
         case .discover:
             return "发现"
         case .me:
@@ -70,6 +70,8 @@ enum MainTabBarItem: String, CaseIterable {
     func getChildController(_ viewModel: ViewModel, navigator: Navigator) -> UIViewController {
         let vc = childController(viewModel, navigator: navigator)
         let item = UITabBarItem(title: title, image: image, selectedImage: selectedImage)
+        let value = Int.random(in: 0..<1_000)
+        item.badgeValue = value == 0 ? nil : value < 100 ? "\(value)" : "•••"
         item.tag = tag
         vc.tabBarItem = item
         return vc
@@ -98,10 +100,7 @@ class MainTabBarController: UITabBarController {
         bindViewModel()
     }
 
-    func setupSubviews() {
-        tabBar.tintColor = Colors.tintColor
-        tabBar.unselectedItemTintColor = Colors.black
-    }
+    func setupSubviews() {}
     
     func bindViewModel() {
         guard let viewModel = viewModel else { return }

@@ -67,7 +67,7 @@ class TableViewController: ASDKViewController<ASTableNode>, ViewControllerType {
     }
     
     var inset: CGFloat {
-        return Configuration.Dimensions.inset
+        return Configuration.dimension(.inset)
     }
     // ViewControllerType implements end
     
