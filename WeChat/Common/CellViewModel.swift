@@ -20,7 +20,7 @@ class CellViewModel {
     let badge = BehaviorRelay<Int?>(value: nil)
     let badgeColor = BehaviorRelay<UIColor?>(value: nil)
     
-    let hidesDisclosure = BehaviorRelay<Bool>(value: false)
+    let hidesDisclosure = BehaviorRelay<Bool>(value: true)
     
     let separatorColor = BehaviorRelay<UIColor?>(value: nil)
     
