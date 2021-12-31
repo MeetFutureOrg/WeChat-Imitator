@@ -62,7 +62,7 @@ final class Application {
             .font: Configuration.font(.tabBarItem)
         ]
         appearance.stackedLayoutAppearance.normal.badgePositionAdjustment = UIOffset(horizontal: -2, vertical: -2)
-        appearance.stackedLayoutAppearance.normal.badgeBackgroundColor = Color.random
+            appearance.stackedLayoutAppearance.normal.badgeBackgroundColor = Color.red
         appearance.stackedLayoutAppearance.normal.badgeTextAttributes = [
             .foregroundColor: Colors.white,
             .font: Configuration.font(.tabBarItemBadge)
@@ -75,7 +75,7 @@ final class Application {
             .font: Configuration.font(.tabBarItem)
         ]
         appearance.stackedLayoutAppearance.selected.badgePositionAdjustment = UIOffset(horizontal: -2, vertical: -2)
-        appearance.stackedLayoutAppearance.selected.badgeBackgroundColor = Color.random
+        appearance.stackedLayoutAppearance.selected.badgeBackgroundColor = Color.red
         appearance.stackedLayoutAppearance.selected.badgeTextAttributes = [
             .foregroundColor: Colors.white,
             .font: Configuration.font(.tabBarItemBadge)
